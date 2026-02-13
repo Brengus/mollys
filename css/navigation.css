@@ -1,0 +1,208 @@
+.main {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    background: none;
+}
+
+.menu-icon {
+    position: sticky;
+    z-index: 10000;
+    display: none;
+    left: calc(100% - 35px);
+    width: 22px;
+    height: 22px;
+    margin: auto 0;
+    flex-direction: column;
+}
+
+.first-stick,
+.second-stick,
+.third-stick {
+    min-width: 22px;
+    min-height: 3px;
+    margin: 3px 0;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.first-stick {
+    margin-top: 0;
+}
+
+.stick-color-light {
+    background-color: var(--color-two);
+}
+
+.stick-color-dark {
+    background-color: var(--color-four);
+}
+
+.ghost {
+    position: absolute;
+    top: 0;
+}
+
+.main.active {
+    background-color: var(--color-one);
+    box-shadow: 0 2px 4px var(--color-black);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main.active-dark {
+    background-color: var(--color-two);
+}
+
+.navigation-class {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.language {
+    width: 22px;
+}
+
+.item-buttons {
+    font-size: var(--font-two);
+    margin: auto 0;
+    padding: 0.7em;
+    font-weight: 700;
+    background: none;
+    line-height: 1.5em;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-light {
+    color: var(--color-two);
+}
+
+.button-dark {
+    color: var(--color-one);
+}
+
+.item-buttons:hover {
+    cursor: pointer;
+    background-color: rgba(141, 178, 162, 0.2);
+    color: var(--color-popup);
+}
+
+.item-buttons:focus {
+    font-weight: bold;
+    background-color: rgba(141, 178, 162, 0.2);
+    color: var(--color-popup);
+}
+
+.button-hide-desktop {
+    display: none;
+}
+
+.upgrade-button {
+    margin: auto 0;
+    width: 22px;
+    height: 22px;
+    color: var(--color-one);
+    border: none;
+    border-radius: 100px;
+    transition: background-position 0.5s ease-in-out;
+}
+
+.upgrade-button:hover {
+    cursor: pointer;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.logo {
+    max-height: 22px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 10px;
+    }
+
+    .main {
+        height: 40px;
+    }
+
+    .menu-icon {
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .menu-icon.open .first-stick {
+        transform: rotate(-45deg) translate(-5px, 8px);
+    }
+
+    .menu-icon.open .second-stick {
+        opacity: 0;
+    }
+
+    .menu-icon.open .third-stick {
+        transform: rotate(45deg) translate(-5px, -8px);
+    }
+
+    .navigation-class {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .upgrade-button {
+        display: none;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .item-buttons {
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .nav-buttons.open {
+        display: grid;
+        width: 100%;
+        grid-auto-rows: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--color-one);
+        padding-top: 10px;
+        border: none;
+        box-shadow: 0 2px 4px var(--color-black);
+        z-index: 998;
+    }
+
+    .nav-buttons.open-dark {
+        background-color: var(--color-two);
+    }
+
+    .button-hide-desktop {
+        display: block;
+    }
+
+    .upgrade-button-responsive {
+        margin: auto 0;
+        width: 22px;
+        height: 22px;
+        color: var(--color-one);
+        border: none;
+        border-radius: 100px;
+        transition: background-position 0.5s ease-in-out;
+    }
+}

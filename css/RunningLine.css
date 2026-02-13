@@ -1,0 +1,65 @@
+.main-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.running-line-title {
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    line-height: 1.5em;
+    margin-bottom: 4rem;
+    color: var(--color-two);
+    font-weight: 700;
+}
+
+.running-line-title-dark {
+    color: var(--color-one);
+}
+
+.logos {
+    display: flex;
+    width: max-content;
+    white-space: nowrap;
+}
+
+
+
+.slide-animation {
+    animation: slidekaco 5s linear infinite;
+}
+
+@keyframes slidekaco {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+}
+
+.white-background {
+    width: 1200px;
+    padding-top: 4rem;
+    margin: 3rem auto;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .white-background {
+        width: 100%;
+    }
+}

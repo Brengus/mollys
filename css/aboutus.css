@@ -1,0 +1,115 @@
+.aboutus-main {
+    width: 100%;
+    scroll-margin-top: 100px;
+}
+
+.aboutus-submain {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.aboutus-header-group {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.aboutus-header {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    /* Fluid typography */
+    font-weight: 700;
+    color: var(--color-two);
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
+}
+
+
+
+.headline {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-popup);
+    margin-bottom: 15px;
+}
+
+.subheadline {
+    color: var(--text-color-two);
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.aboutus-header-dark {
+    color: var(--color-one);
+}
+
+/* Content Grid */
+.about-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.3);
+    /* Subtle glass effect on your cream */
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--color-three);
+    transition: transform 0.3s ease;
+}
+
+.about-card-dark {
+    background: var(--color-one);
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Modernized Separator Style */
+.title-separator {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.separator {
+    flex: 1;
+    height: 1px;
+    background-color: var(--color-three);
+}
+
+.about-titles {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    color: var(--color-two);
+    background-color: var(--color-three);
+    padding: 6px 16px;
+    border-radius: 50px;
+    /* Pill shape is more modern */
+}
+
+.about-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-two);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .about-content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutus-main {
+        width: 90%;
+        padding: 50px 0;
+        margin: 0 auto;
+    }
+}

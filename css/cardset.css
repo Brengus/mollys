@@ -1,0 +1,19 @@
+.main-cardset {
+    position: relative;
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px auto;
+    gap: 2em;
+    /* Changed to Sage for a softer section break */
+    border-bottom: 1px solid var(--color-three);
+    padding-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    .main-cardset {
+        grid-template-columns: 1fr;
+        padding: 0px 20px 60px 20px;
+        margin: 20px auto;
+    }
+}
