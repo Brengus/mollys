@@ -7,14 +7,14 @@ function Services() {
     const { t } = useTranslation();
 
     const objectArray = [
-        { title: t("Bathing"), image: "../servicesimg/bath-tub.png", description: t("Bathing-p") },
-        { title: t("Clipping"), image: "../servicesimg/trimmer.png", description: t("Clipping-p") },
-        { title: t("Safe Drying"), image: "../servicesimg/dryer.png", description: t("Safe Drying-p") },
-        { title: t("Paws and Claws"), image: "../servicesimg/paw.png", description: t("Paws and Claws-p") },
-        { title: t("Ear Cleaning"), image: "../servicesimg/ears.png", description: t("Ear Cleaning-p") },
-        { title: t("Tick Removal"), image: "../servicesimg/insect.png", description: t("Tick Removal-p") },
-        { title: t("Face Trim"), image: "../servicesimg/dog.png", description: t("Face Trim-p") },
-        { title: t("Spritz"), image: "../servicesimg/spray.png", description: t("Spritz-p") },
+        { title: t("Bathing"), image: "/servicesimg/bath-tub.webp", description: t("Bathing-p") },
+        { title: t("Clipping"), image: "/servicesimg/trimmer.webp", description: t("Clipping-p") },
+        { title: t("Safe Drying"), image: "/servicesimg/dryer.webp", description: t("Safe Drying-p") },
+        { title: t("Paws and Claws"), image: "/servicesimg/paw.webp", description: t("Paws and Claws-p") },
+        { title: t("Ear Cleaning"), image: "/servicesimg/ears.webp", description: t("Ear Cleaning-p") },
+        { title: t("Tick Removal"), image: "/servicesimg/insect.webp", description: t("Tick Removal-p") },
+        { title: t("Face Trim"), image: "/servicesimg/dog.webp", description: t("Face Trim-p") },
+        { title: t("Spritz"), image: "/servicesimg/spray.webp", description: t("Spritz-p") },
     ]
 
     const isDarkmode: boolean = useSelector((state: any) => state.darkmode.isDarkmode)

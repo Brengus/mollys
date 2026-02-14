@@ -1,5 +1,6 @@
 'use client';
 import "../css/navigation.css";
+import Image from "next/image";
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { useSelector, useDispatch } from 'react-redux';
@@ -90,10 +91,10 @@ function Navigation() {
                 </div>
                 <nav className="navigation-class">
                     <div className="item">
-                        <img src="../logos/title.png" title={t("Home")} alt="logo" className="logo" onClick={() => handleClick("home")} />
+                        <Image src="/logos/title.webp" width="72" height="22" title={t("Home")} alt="logo" className="logo" onClick={() => handleClick("home")} />
                     </div>
                     <div className={`nav-buttons item ${menuOpen ? "open" : ""} ${isDarkmode ? "open-dark" : ""}`}>
-                        {linkArray.map((link, index) => {
+                        {linkArray.map((link, index: number) => {
                             return <button key={index} className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} ${isScrolled ? "active" : ""}`} onClick={() => handleClick(link.id)}>{link.label}</button>
                         })}
                         <button className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} button-hide-desktop`}
@@ -104,7 +105,7 @@ function Navigation() {
                                 }
                             }}
                             style={{ paddingTop: "0px", paddingBottom: "0px" }}>
-                            <img title={t("Light Mode")} className="item upgrade-button-responsive" src={isDarkmode ? "../blackPoodle.png" : "../whitePoodle.png"} alt="Dark/Light Mode" />
+                            <Image width="22" height="22" title={t("Light Mode")} className="item upgrade-button-responsive" src={isDarkmode ? "/blackPoodle.webp" : "/whitePoodle.webp"} alt="Dark/Light Mode" />
                         </button>
                         <button className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} button-hide-desktop`}
                             onClick={() => setMenuOpen(false)}
@@ -112,24 +113,22 @@ function Navigation() {
                         >
                             <div className="item upgrade-button-responsive" title={t("GE/EN")}>
                                 {
-                                    lng === "ge" ? <img className="language" onClick={() => handleLanguageChange('en')} src="../ge.png" alt="Ge" />
-                                        : <img className="language" onClick={() => handleLanguageChange('ge')} src="../us.png" alt="En" />
+                                    lng === "ge" ? <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('en')} src="/ge.webp" alt="Ge" />
+                                        : <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('ge')} src="/us.webp" alt="En" />
                                 }
                             </div>
                         </button>
                     </div>
                     <div className="item upgrade-button" title={t("GE/EN")}>
                         {
-                            lng === "ge" ? <img className="language" onClick={() => handleLanguageChange('en')} src="../ge.png" alt="Ge" />
-                                : <img className="language" onClick={() => handleLanguageChange('ge')} src="../us.png" alt="En" />
+                            lng === "ge" ? <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('en')} src="/ge.webp" alt="Ge" />
+                                : <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('ge')} src="/us.webp" alt="En" />
                         }
                     </div>
-                    <img title={t("Light Mode")} className="item upgrade-button" src={isDarkmode ? "../blackPoodle.png" : "../whitePoodle.png"} alt="Dark/Light Mode" onClick={() => switchMode()} />
+                    <Image width="22" height="22" title={t("Light Mode")} className="item upgrade-button" src={isDarkmode ? "/blackPoodle.webp" : "/whitePoodle.webp"} alt="Dark/Light Mode" onClick={() => switchMode()} />
                 </nav>
             </div>
         </>
-
-
     )
 }
 
