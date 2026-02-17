@@ -4,7 +4,7 @@ import "../css/mainhero.css";
 import { useSelector } from "react-redux";
 import { useTranslation } from 'next-i18next';
 import { useParams } from "next/navigation";
-import Image from "next/image";
+// import Image from "next/image";
 import { useState, useEffect } from 'react';
 
 function MainHero() {
