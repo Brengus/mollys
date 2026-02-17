@@ -123,16 +123,16 @@ function Navigation() {
                         >
                             <div className="item upgrade-button-responsive" title={t("GE/EN")}>
                                 {
-                                    lng === "ge" ? <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('en')} src="/ge.webp" alt="Ge" />
-                                        : <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('ge')} src="/us.webp" alt="En" />
+                                    lng === "ka" ? <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('en')} src="/ge.webp" alt="Ge" />
+                                        : <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('ka')} src="/us.webp" alt="En" />
                                 }
                             </div>
                         </button>
                     </div>
                     <div className="item upgrade-button" title={t("GE/EN")}>
                         {
-                            lng === "ge" ? <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('en')} src="/ge.webp" alt="Ge" />
-                                : <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('ge')} src="/us.webp" alt="En" />
+                            lng === "ka" ? <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('en')} src="/ge.webp" alt="Ge" />
+                                : <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('ka')} src="/us.webp" alt="En" />
                         }
                     </div>
                     <Image width="22" height="22" title={t("Light Mode")} className="item upgrade-button" src={isDarkmode ? "/blackPoodle.webp" : "/whitePoodle.webp"} alt="Dark/Light Mode" onClick={() => switchMode()} />
