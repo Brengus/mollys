@@ -12,12 +12,22 @@ function MainPage() {
 
     return (
         <>
-            <MainHero />
-            <Hero />
-            <Services />
-            <AboutUs />
-            <RunningLine />
-            <Map />
+            <section>
+                <MainHero />
+                <Hero />
+            </section>
+            <section id="services">
+                <Services />
+            </section>
+            <section id="aboutus">
+                <AboutUs />
+            </section>
+            <section id="ourpartners">
+                <RunningLine />
+            </section>
+            <section id="map">
+                <Map />
+            </section>
         </>
     );
 }

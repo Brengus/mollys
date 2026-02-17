@@ -59,6 +59,7 @@ const resources = {
             "Email-site": "Site: ",
             "Social": "Social Media",
             "Book Now": "Book Now",
+            "Map": "ADDRESS"
         }
     },
     ka: {
@@ -114,7 +115,8 @@ const resources = {
             "Email-office": "ოფისი: ",
             "Email-site": "საიტი: ",
             "Social": "სოციალური ქსელები",
-            "Book Now": "დაჯავშნე ახლავე"
+            "Book Now": "დაჯავშნე ახლავე",
+            "Map": "მისამართი"
         }
     }
 };

@@ -1,6 +1,7 @@
 'use client';
 import "../css/navigation.css";
 import Image from "next/image";
+import Link from 'next/link';
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { useSelector, useDispatch } from 'react-redux';
@@ -33,10 +34,10 @@ function Navigation() {
 
     const linkArray = [
         { id: "home", label: t("Home") },
+        { id: "services", label: t("Services") },
         { id: "aboutus", label: t("About") },
         { id: "ourpartners", label: t("Partners") },
-        { id: "services", label: t("Services") },
-        { id: "openinghours", label: t("Opening Hours") },
+        { id: "map", label: t("Map") },
     ];
 
 
@@ -105,7 +106,7 @@ function Navigation() {
                     </div>
                     <div className={`nav-buttons item ${menuOpen ? "open" : ""} ${isDarkmode ? "open-dark" : ""}`}>
                         {linkArray.map((link: { id: string, label: string }, index: number) => {
-                            return <button key={link.id} className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} ${isScrolled ? "active" : ""}`} onClick={() => handleClick(link.id)}>{link.label}</button>
+                            return <Link href={`/${lng}#${link.id}`} key={link.id} className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} ${isScrolled ? "active" : ""}`} onClick={() => handleClick(link.id)}>{link.label}</Link>
                         })}
                         <button className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} button-hide-desktop`}
                             onClick={() => {
