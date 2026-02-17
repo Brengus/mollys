@@ -5,8 +5,9 @@ import AboutUs from '@/components/AboutUs';
 import RunningLine from '@/components/RunningLine';
 import Services from '@/components/Services';
 import Map from '@/components/Map';
+import { appWithTranslation } from 'next-i18next';
 
-export default function MainPage() {
+function MainPage() {
     return (
         <>
             <MainHero />
@@ -18,3 +19,5 @@ export default function MainPage() {
         </>
     );
 }
+
+export default appWithTranslation(MainPage);

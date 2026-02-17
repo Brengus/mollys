@@ -1,6 +1,7 @@
 .main-container {
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .running-line-title {
@@ -20,6 +21,8 @@
     display: flex;
     width: max-content;
     white-space: nowrap;
+    position: relative;
+    z-index: -1;
 }
 
 
@@ -41,7 +44,7 @@
 .column {
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .clients {
@@ -50,7 +53,7 @@
 }
 
 .white-background {
-    width: 1200px;
+    max-width: 100%;
     padding-top: 4rem;
     margin: 3rem auto;
     overflow: hidden;

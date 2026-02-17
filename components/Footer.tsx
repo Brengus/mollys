@@ -1,10 +1,17 @@
 'use client';
-import "../css/footer.css"
-import { useTranslation } from "react-i18next"
+import "../css/footer.css";
+import { useTranslation } from "react-i18next";
+import { useState, useEffect } from 'react';
 import Image from 'next/image'; // Optimized Next.js Image component
 
 function Footer() {
     const { t } = useTranslation();
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    if (!mounted) return null;
 
     return (
         <div style={{ backgroundColor: "var(--color-two)" }}>

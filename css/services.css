@@ -97,4 +97,9 @@
         padding: 0 1rem;
         margin-bottom: 2rem;
     }
+
+    .service-card {
+        max-width: 100%;
+
+    }
 }

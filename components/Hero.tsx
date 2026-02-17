@@ -1,8 +1,16 @@
 import "../css/hero.css";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
+import { useState, useEffect } from "react";
 
 function Hero() {
     const { t } = useTranslation();
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, [])
+
+    if (!mounted) return null;
     return (
         <>
             <div className="hero-grid">

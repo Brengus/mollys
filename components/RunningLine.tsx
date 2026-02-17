@@ -1,11 +1,19 @@
 import LogoSlide from "./LogoSlide";
 import { useSelector } from "react-redux";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
+import { useState, useEffect } from 'react';
 import "../css/RunningLine.css"
 
 export default function RunningLine() {
     const { t } = useTranslation();
     const isDarkmode: boolean = useSelector((state: any) => state.darkmode.isDarkmode);
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, [])
+
+    if (!mounted) return null;
     return (
         <div id="ourpartners" className="white-background">
             <div className="column">

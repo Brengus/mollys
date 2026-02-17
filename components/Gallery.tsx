@@ -1,16 +1,8 @@
-import dbConnect from '@/lib/db';
-import Gallery from '@/models/Gallery';
 import Image from 'next/image'; // Optimized Next.js Image component
 
-async function getPictures() {
-    await dbConnect();
-    // Fetch all pictures from MongoDB
-    const pictures = await Gallery.find({}).lean();
-    return pictures;
-}
 
 export default async function GalleryComponent() {
-    const pictures = await getPictures();
+    const pictures = ["1", "2"];
 
     return (
         <>

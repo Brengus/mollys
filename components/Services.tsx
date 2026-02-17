@@ -1,10 +1,17 @@
 import "../css/services.css";
 import { useSelector } from "react-redux";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
+import { useState, useEffect } from "react";
 import Service from "./service";
 
 function Services() {
     const { t } = useTranslation();
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, [])
+
 
     const objectArray = [
         { title: t("Bathing"), image: "/servicesimg/bath-tub.webp", description: t("Bathing-p") },
@@ -18,6 +25,8 @@ function Services() {
     ]
 
     const isDarkmode: boolean = useSelector((state: any) => state.darkmode.isDarkmode)
+
+    if (!mounted) return null;
 
     return (
         <>

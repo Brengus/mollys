@@ -1,8 +1,8 @@
 'use client';
 import "../css/popup.css";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 // import "./Pizza"
-import React, { useEffect, useRef, useCallback } from "react";
+import React, { useEffect, useState, useRef, useCallback } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { changeStatus } from '../slices/popupSlice';
 // import BusLayout from "./BusLayout";
@@ -15,15 +15,15 @@ interface State {
 
 function Popup() {
     const { t } = useTranslation();
-
+    const [mounted, setMounted] = useState(false);
     const popupRef = useRef<HTMLDivElement>(null);
     const isOpen: boolean = useSelector((state: State) => state.popup.isOpen);
     const dispatch = useDispatch();
     const closePopUp = useCallback(() => dispatch(changeStatus()), [dispatch]);
 
 
-
     useEffect(() => {
+        setMounted(true);
         const handleClickOutside = (event: MouseEvent) => {
             if (popupRef.current && !popupRef.current.contains(event.target as Node)) {
                 closePopUp();
@@ -41,6 +41,8 @@ function Popup() {
             document.body.style.overflow = 'unset';
         }
     }, [isOpen, closePopUp]);
+
+    if (!mounted) return null;
 
     return (
         <>

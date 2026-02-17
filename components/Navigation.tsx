@@ -5,7 +5,7 @@ import React, { useEffect, useState, useRef, useCallback } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { useSelector, useDispatch } from 'react-redux';
 import { changeDarkMode } from "../slices/darkmodeSlice";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 interface State {
     darkmode: {
@@ -25,6 +25,12 @@ function Navigation() {
     const switchMode = useCallback(() => dispatch(changeDarkMode()), [dispatch]);
     const [menuOpen, setMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, [])
+
     const linkArray = [
         { id: "home", label: t("Home") },
         { id: "aboutus", label: t("About") },
@@ -32,6 +38,7 @@ function Navigation() {
         { id: "services", label: t("Services") },
         { id: "openinghours", label: t("Opening Hours") },
     ];
+
 
     const handleClick = (sectionId: string) => {
         const section = document.getElementById(sectionId);
@@ -79,6 +86,9 @@ function Navigation() {
         i18n.changeLanguage(newLng);
     }
 
+    if (!mounted) return null;
+
+
     return (
         <>
             <div className="ghost" ref={ghostRef}></div>
@@ -94,8 +104,8 @@ function Navigation() {
                         <Image src="/logos/title.webp" width="72" height="22" title={t("Home")} alt="logo" className="logo" onClick={() => handleClick("home")} />
                     </div>
                     <div className={`nav-buttons item ${menuOpen ? "open" : ""} ${isDarkmode ? "open-dark" : ""}`}>
-                        {linkArray.map((link, index: number) => {
-                            return <button key={index} className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} ${isScrolled ? "active" : ""}`} onClick={() => handleClick(link.id)}>{link.label}</button>
+                        {linkArray.map((link: { id: string, label: string }, index: number) => {
+                            return <button key={link.id} className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} ${isScrolled ? "active" : ""}`} onClick={() => handleClick(link.id)}>{link.label}</button>
                         })}
                         <button className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} button-hide-desktop`}
                             onClick={() => {

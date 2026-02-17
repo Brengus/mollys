@@ -1,6 +1,6 @@
 import "../css/openinghours.css";
 import { useSelector } from "react-redux";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 function OpeningHours() {
     const { t } = useTranslation();
     const isDarkmode: boolean = useSelector((state: any) => state.darkmode.isDarkmode);

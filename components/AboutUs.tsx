@@ -2,10 +2,16 @@
 import "../css/aboutus.css";
 import { useSelector } from "react-redux";
 import { useTranslation } from 'react-i18next';
+import { useState, useEffect } from 'react';
 
 function AboutUs() {
     const { t } = useTranslation();
     const isDarkmode: boolean = useSelector((state: any) => state.darkmode.isDarkmode);
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, [])
     const obj = {
         header: t("About-h2"),
         headline: t("About-h1"),
@@ -15,6 +21,8 @@ function AboutUs() {
         ourPhilosophyTitle: t("Philosophy"),
         ourPhilosophy: t("Philosophy-p")
     };
+
+    if (!mounted) return null;
 
     return (
         <section id="aboutus" className="aboutus-main">
