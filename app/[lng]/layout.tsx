@@ -1,16 +1,17 @@
 import { Providers } from '@/components/Providers';
+import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }: { params: Promise<{ lng: string }> }) {
     const { lng } = await params;
 
     const titles: Record<string, string> = {
         en: "Molly's | Pet Grooming Spa, Dog and Cat Grooming",
-        ge: "მოლი'ს | გრუმინგ სალონი, ძაღლის და კატის შეჭრა"
+        ka: "მოლი'ს | გრუმინგ სალონი, ძაღლის და კატის შეჭრა"
     };
 
     const descriptions: Record<string, string> = {
         en: "Professional grooming and daycare for your best friend.",
-        ge: "ცხოველების გრუმინგ სალონი. ძაღლისა და კატის პროფესიონალური გრუმინგი. შეჭრა, გაპარსვა, დაბანა, გამოვარცხნა, გაშრობა, საგამოფენოდ მომზადება."
+        ka: "ცხოველების გრუმინგ სალონი. ძაღლისა და კატის პროფესიონალური გრუმინგი. შეჭრა, გაპარსვა, დაბანა, გამოვარცხნა, გაშრობა, საგამოფენოდ მომზადება."
     };
 
     return {
@@ -36,12 +37,19 @@ export default async function LngLayout({
 }) {
     const { lng } = await params;
 
+    const supportedLanguages = ['en', 'ka'];
+    if (!supportedLanguages.includes(lng)) {
+        notFound();
+    }
+
     return (
         <html lang={lng}>
             <body>
                 <Providers>
                     <Navigation />
+
                     <main>{children}</main>
+
                     <Footer />
                     <Popup />
                 </Providers>

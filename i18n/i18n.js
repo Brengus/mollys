@@ -61,7 +61,7 @@ const resources = {
             "Book Now": "Book Now",
         }
     },
-    ge: {
+    ka: {
         translation: {
             "Tiktok": "ტიკტოკი",
             "Facebook": "ფეისბუქი",
@@ -125,7 +125,6 @@ i18n
     .init({
         resources,
         // lng: "en", <--- REMOVE THIS line
-        fallbackLng: "ge",
         detection: {
             // order: look at path first (e.g., /ge), then query string (?lng=ge)
             order: ['path', 'querystring', 'cookie', 'localStorage', 'navigator'],

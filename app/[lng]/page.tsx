@@ -8,6 +8,8 @@ import Map from '@/components/Map';
 import { appWithTranslation } from 'next-i18next';
 
 function MainPage() {
+
+
     return (
         <>
             <MainHero />
