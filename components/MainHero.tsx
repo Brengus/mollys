@@ -21,7 +21,7 @@ function MainHero() {
             <div id="home" className={`main-hero ${isDarkmode ? "main-hero-dark" : "main-hero-light"}`}>
                 <div className="main-hero-grid">
                     <div className={`main-hero-text ${isDarkmode ? "main-hero-text-dark" : ""} ${lng === "ge" ? "main-hero-text-georgian" : ""}`}>{t("MainHero")}</div>
-                    <video autoPlay loop muted playsInline>
+                    <video autoPlay loop muted playsInline >
                         <source src="video.mov" type='video/quicktime; codecs="hvc1"' />
                         <source src="output.webm" type="video/webm" />
                     </video>
