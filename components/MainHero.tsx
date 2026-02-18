@@ -23,8 +23,9 @@ function MainHero() {
                 <div className="main-hero-grid">
                     <div className={`main-hero-text ${isDarkmode ? "main-hero-text-dark" : ""} ${lng === "ge" ? "main-hero-text-georgian" : ""}`}>{t("MainHero")}</div>
                     {/* <Image src="/doggo.webp" width="720" height="381" alt="" className="hero-image" /> */}
-                    <video autoPlay loop muted playsInline poster="fallback.jpg" className="hero-image">
-                        <source src="video.webm" type="video/webm" />
+                    <video autoPlay loop muted playsInline poster="fallback.jpg" className="hero-image" >
+                        <source src="output.webm" type="video/webm" />
+                        <source src="video.mov" type='video/quicktime; codecs="hvc1"' />
                     </video>
                 </div>
             </div>
