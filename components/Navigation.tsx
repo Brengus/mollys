@@ -87,7 +87,7 @@ function Navigation() {
         i18n.changeLanguage(newLng);
     }
 
-    if (!mounted) return null;
+    if (!mounted) return <div style={{ minHeight: "70vh" }} />;
 
 
     return (

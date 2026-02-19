@@ -10,7 +10,7 @@ function Hero() {
         setMounted(true);
     }, [])
 
-    if (!mounted) return null;
+    if (!mounted) return <div style={{ minHeight: "70vh" }} />;
     return (
         <>
             <div className="hero-grid">

@@ -4,7 +4,8 @@ import "../css/mainhero.css";
 import { useSelector } from "react-redux";
 import { useTranslation } from 'next-i18next';
 import { useParams } from "next/navigation";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import Video from "./Video";
 
 function MainHero() {
     const { lng } = useParams();
@@ -15,16 +16,13 @@ function MainHero() {
         setMounted(true);
     }, [])
 
-    if (!mounted) return null;
+    if (!mounted) return <div style={{ minHeight: "600px" }} />;
     return (
         <>
             <div id="home" className={`main-hero ${isDarkmode ? "main-hero-dark" : "main-hero-light"}`}>
                 <div className="main-hero-grid">
                     <div className={`main-hero-text ${isDarkmode ? "main-hero-text-dark" : ""} ${lng === "ge" ? "main-hero-text-georgian" : ""}`}>{t("MainHero")}</div>
-                    <video autoPlay loop muted playsInline >
-                        <source src="video.mov" type='video/quicktime; codecs="hvc1"' />
-                        <source src="output.webm" type="video/webm" />
-                    </video>
+                    <Video />
                 </div>
             </div>
         </>

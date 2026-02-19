@@ -13,7 +13,7 @@ export default function RunningLine() {
         setMounted(true);
     }, [])
 
-    if (!mounted) return null;
+    if (!mounted) return <div style={{ minHeight: "200px" }} />;
     return (
         <div id="ourpartners" className="white-background">
             <div className="column">

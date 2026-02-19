@@ -22,7 +22,7 @@ function AboutUs() {
         ourPhilosophy: t("Philosophy-p")
     };
 
-    if (!mounted) return null;
+    if (!mounted) return <div style={{ minHeight: "70vh" }} />;
 
     return (
         <section id="aboutus" className="aboutus-main">

@@ -20,6 +20,11 @@
   --color-popup-hover: hsl(15, 75%, 80%);
 }
 
+main {
+  min-height: 100vh;
+  height: 100%;
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -30,6 +35,7 @@ body {
   font-family: 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--background-color);

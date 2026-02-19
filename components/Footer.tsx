@@ -11,7 +11,7 @@ function Footer() {
         setMounted(true);
     }, []);
 
-    if (!mounted) return null;
+    if (!mounted) return <div style={{ minHeight: "70vh" }} />;
 
     return (
         <div style={{ backgroundColor: "var(--color-two)" }}>

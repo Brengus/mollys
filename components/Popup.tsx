@@ -42,7 +42,7 @@ function Popup() {
         }
     }, [isOpen, closePopUp]);
 
-    if (!mounted) return null;
+    if (!mounted) return <div style={{ minHeight: "100px" }} />;
 
     return (
         <>

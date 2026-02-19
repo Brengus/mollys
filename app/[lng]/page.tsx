@@ -13,24 +13,41 @@ function MainPage() {
 
     return (
         <>
-            <section>
-                <MainHero />
-                <Hero />
+            <section >
+                <div style={{ minHeight: 600 }}>
+                    <MainHero />
+                </div>
             </section>
-            <section id="services">
-                <Services />
+            <section >
+                <div style={{ minHeight: 400 }}>
+                    <Hero />
+                </div>
+            </section>
+            <section >
+                <div style={{ minHeight: 900 }}>
+                    <GalleryComponent />
+                </div>
+            </section>
+            <section id="services" >
+                <div style={{ minHeight: '600px' }}>
+                    <Services />
+                </div>
             </section>
             <section id="aboutus">
-                <AboutUs />
+                <div style={{ minHeight: '900px' }}>
+                    <AboutUs />
+                </div>
+
             </section>
-            <section id="ourpartners">
-                <RunningLine />
-            </section>
-            <section>
-                <GalleryComponent />
+            <section id="ourpartners" >
+                <div style={{ minHeight: '200px' }}>
+                    <RunningLine />
+                </div>
             </section>
             <section id="map">
-                <Map />
+                <div style={{ height: '350px' }}>
+                    <Map />
+                </div>
             </section>
         </>
     );

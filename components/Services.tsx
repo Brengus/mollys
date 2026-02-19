@@ -26,7 +26,7 @@ function Services() {
 
     const isDarkmode: boolean = useSelector((state: any) => state.darkmode.isDarkmode)
 
-    if (!mounted) return null;
+    if (!mounted) return <div style={{ minHeight: "600px" }} />;
 
     return (
         <>
