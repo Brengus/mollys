@@ -20,11 +20,9 @@
   --color-popup-hover: hsl(15, 75%, 80%);
 }
 
-main {
-  min-height: 100vh;
-  height: 100%;
+img {
+  display: block;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -53,7 +51,7 @@ code {
 
 .imageUrl {
   width: 200px;
-  height: auto;
+  /* height: auto; */
   border-radius: 50%;
 
 }

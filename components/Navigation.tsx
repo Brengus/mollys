@@ -3,10 +3,12 @@ import "../css/navigation.css";
 import Image from "next/image";
 import Link from 'next/link';
 import React, { useEffect, useState, useRef, useCallback } from "react";
-import { useRouter, useParams } from "next/navigation";
+import { useParams } from "next/navigation";
 import { useSelector, useDispatch } from 'react-redux';
 import { changeDarkMode } from "../slices/darkmodeSlice";
 import { useTranslation } from 'next-i18next';
+import Language from "./Language";
+import Menu from "./Menu";
 
 interface State {
     darkmode: {
@@ -16,7 +18,6 @@ interface State {
 
 function Navigation() {
     const { t, i18n } = useTranslation();
-    const router = useRouter();
     const params = useParams();
     const lng = params?.lng as string;
     const scrollRef = useRef<HTMLDivElement>(null);
@@ -26,11 +27,6 @@ function Navigation() {
     const switchMode = useCallback(() => dispatch(changeDarkMode()), [dispatch]);
     const [menuOpen, setMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, [])
 
     const linkArray = [
         { id: "home", label: t("Home") },
@@ -39,7 +35,6 @@ function Navigation() {
         { id: "ourpartners", label: t("Partners") },
         { id: "map", label: t("Map") },
     ];
-
 
     const handleClick = (sectionId: string) => {
         const section = document.getElementById(sectionId);
@@ -51,10 +46,6 @@ function Navigation() {
         if (menuOpen) {
             setMenuOpen(false);
         }
-    }
-
-    const handleMenuClick = () => {
-        setMenuOpen(!menuOpen);
     }
 
     const handleScroll = () => {
@@ -82,24 +73,12 @@ function Navigation() {
         }
     }, [lng, i18n])
 
-    const handleLanguageChange = (newLng: string) => {
-        router.push(`/${newLng}`);
-        i18n.changeLanguage(newLng);
-    }
-
-    if (!mounted) return <div style={{ minHeight: "70vh" }} />;
-
-
     return (
         <>
             <div className="ghost" ref={ghostRef}></div>
 
             <div className={`main ${isScrolled ? isDarkmode ? "active-dark" : "active" : ""}`} ref={scrollRef}>
-                <div className={`menu-icon ${menuOpen ? "open" : ""}`} onClick={() => handleMenuClick()}>
-                    <div className={`first-stick ${isDarkmode ? "stick-color-dark" : "stick-color-light"}`}></div>
-                    <div className={`second-stick ${isDarkmode ? "stick-color-dark" : "stick-color-light"}`}></div>
-                    <div className={`third-stick ${isDarkmode ? "stick-color-dark" : "stick-color-light"}`}></div>
-                </div>
+                <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} isDarkmode={isDarkmode} />
                 <nav className="navigation-class">
                     <div className="item">
                         <Image src="/logos/title.webp" width="72" height="22" title={t("Home")} alt="logo" className="logo" onClick={() => handleClick("home")} />
@@ -122,20 +101,10 @@ function Navigation() {
                             onClick={() => setMenuOpen(false)}
                             style={{ paddingTop: "0px" }}
                         >
-                            <div className="item upgrade-button-responsive" title={t("GE/EN")}>
-                                {
-                                    lng === "ka" ? <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('en')} src="/ge.webp" alt="Ge" />
-                                        : <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('ka')} src="/us.webp" alt="En" />
-                                }
-                            </div>
+                            <Language lng={lng} LanguageClass="item upgrade-button-responsive" LanguageTitle={t("GE/EN")} />
                         </button>
                     </div>
-                    <div className="item upgrade-button" title={t("GE/EN")}>
-                        {
-                            lng === "ka" ? <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('en')} src="/ge.webp" alt="Ge" />
-                                : <Image width="22" height="22" className="language" onClick={() => handleLanguageChange('ka')} src="/us.webp" alt="En" />
-                        }
-                    </div>
+                    <Language lng={lng} LanguageClass="item upgrade-button" LanguageTitle={t("GE/EN")} />
                     <Image width="22" height="22" title={t("Light Mode")} className="item upgrade-button" src={isDarkmode ? "/blackPoodle.webp" : "/whitePoodle.webp"} alt="Dark/Light Mode" onClick={() => switchMode()} />
                 </nav>
             </div>

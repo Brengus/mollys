@@ -1,17 +1,10 @@
 'use client';
 import "../css/footer.css";
 import { useTranslation } from "react-i18next";
-import { useState, useEffect } from 'react';
 import Image from 'next/image'; // Optimized Next.js Image component
 
 function Footer() {
     const { t } = useTranslation();
-    const [mounted, setMounted] = useState(false);
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) return <div style={{ minHeight: "70vh" }} />;
 
     return (
         <div style={{ backgroundColor: "var(--color-two)" }}>
@@ -33,9 +26,9 @@ function Footer() {
                 <div className="card-footer">
                     <div className="title-footer">{t("Social")}</div>
                     <div className="footer-icons-list">
-                        <Image src="/social/tik-tok.webp" width="32" height="32" alt="Tiktok" title={t("Tiktok")} className="footer-icon" />
-                        <Image src="/social/instagram.webp" width="32" height="32" alt="Instagram" title={t("Instagram")} className="footer-icon" onClick={() => window.open("https://www.instagram.com/mollys_ge?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "_blank")} />
-                        <Image src="/social/facebook.webp" width="32" height="32" title={t("Facebook")} alt="Facebook" className="footer-icon" />
+                        <Image src="/social/tik-tok.webp" width="32" height="32" alt="Tiktok" title={t("Tiktok")} className="footer-icon" loading="lazy" />
+                        <Image src="/social/instagram.webp" width="32" height="32" alt="Instagram" title={t("Instagram")} className="footer-icon" loading="lazy" onClick={() => window.open("https://www.instagram.com/mollys_ge?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "_blank")} />
+                        <Image src="/social/facebook.webp" width="32" height="32" title={t("Facebook")} alt="Facebook" className="footer-icon" loading="lazy" />
                     </div>
                 </div>
             </div>

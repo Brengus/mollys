@@ -126,7 +126,7 @@ i18n
     .use(initReactI18next)
     .init({
         resources,
-        // lng: "en", <--- REMOVE THIS line
+        lng: "ka",
         detection: {
             // order: look at path first (e.g., /ge), then query string (?lng=ge)
             order: ['path', 'querystring', 'cookie', 'localStorage', 'navigator'],

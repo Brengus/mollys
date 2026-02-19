@@ -1,11 +1,9 @@
 'use client';
 import "../css/popup.css";
 import { useTranslation } from "next-i18next";
-// import "./Pizza"
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { changeStatus } from '../slices/popupSlice';
-// import BusLayout from "./BusLayout";
 
 interface State {
     popup: {

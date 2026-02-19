@@ -1,4 +1,5 @@
 'use client';
+import { useSyncLanguage } from '../useSyncLanguage';
 import MainHero from '@/components/MainHero';
 import Hero from '@/components/Hero';
 import AboutUs from '@/components/AboutUs';
@@ -7,42 +8,30 @@ import Services from '@/components/Services';
 import Map from '@/components/Map';
 import { appWithTranslation } from 'next-i18next';
 import GalleryComponent from '@/components/Gallery';
+import { useParams } from 'next/navigation';
 
 function MainPage() {
-
+    const params = useParams();
+    const lng = params.lng as string;
+    useSyncLanguage();
 
     return (
         <>
-            <section >
-                <div style={{ minHeight: 600 }}>
-                    <MainHero />
-                </div>
+            <section>
+                <MainHero lng={lng} />
             </section>
-            <section >
-                <div style={{ minHeight: 400 }}>
-                    <Hero />
-                </div>
+            <section style={{ minHeight: 400 }}>
+                <Hero />
             </section>
-            <section >
-                <div style={{ minHeight: 900 }}>
-                    <GalleryComponent />
-                </div>
+            <section style={{ maxWidth: "1200px", minHeight: "1200px", margin: "0 auto", padding: "20px" }}>
+                <GalleryComponent />
             </section>
-            <section id="services" >
-                <div style={{ minHeight: '600px' }}>
-                    <Services />
-                </div>
+            <section id="services" style={{ minHeight: '600px' }}>
+                <Services />
             </section>
-            <section id="aboutus">
-                <div style={{ minHeight: '900px' }}>
-                    <AboutUs />
-                </div>
-
-            </section>
-            <section id="ourpartners" >
-                <div style={{ minHeight: '200px' }}>
-                    <RunningLine />
-                </div>
+            <AboutUs />
+            <section id="ourpartners" style={{ height: '300px' }}>
+                <RunningLine />
             </section>
             <section id="map">
                 <div style={{ height: '350px' }}>

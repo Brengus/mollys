@@ -1,19 +1,19 @@
 import Image from "next/image";
 
+
 export default function GalleryComponent() {
     const pictures = [
-        "https://images.pexels.com/photos/4587995/pexels-photo-4587995.jpeg",
-        "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg",
-        "https://images.pexels.com/photos/4587994/pexels-photo-4587994.jpeg",
-        "https://images.pexels.com/photos/4588010/pexels-photo-4588010.jpeg",
-        "https://images.pexels.com/photos/4587970/pexels-photo-4587970.jpeg",
-        "https://images.pexels.com/photos/1805168/pexels-photo-1805168.jpeg",
-        "https://images.pexels.com/photos/374906/pexels-photo-374906.jpeg",
-        "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg"
+        { url: "/gallery/dog1.jpeg", width: 4026, height: 6039, loading: "priority" },
+        { url: "/gallery/dog2.jpeg", width: 4204, height: 6306, loading: "priority" },
+        { url: "/gallery/dog3.jpeg", width: 3935, height: 5902, loading: "priority" },
+        { url: "/gallery/dog4.jpeg", width: 6053, height: 4035, loading: "lazy" },
+        { url: "/gallery/dog5.jpeg", width: 4171, height: 2781, loading: "lazy" },
+        { url: "/gallery/dog6.jpeg", width: 4956, height: 2868, loading: "lazy" },
+        { url: "/gallery/dog7.jpeg", width: 5184, height: 3888, loading: "lazy" },
     ];
 
     return (
-        <section style={{ maxWidth: "1200px", margin: "0 auto", padding: "20px" }}>
+        <>
             <h2 style={{
                 textAlign: "center",
                 fontSize: "clamp(1.5rem, 5vw, 2.5rem)",
@@ -27,28 +27,30 @@ export default function GalleryComponent() {
 
             <div
                 style={{
-                    columnCount: 3,
-                    columnGap: "10px",
+                    display: "grid",
+                    gridTemplateColumns: "repeat(3, 1fr)",
+                    gap: "10px",
                 }}
             >
                 {pictures.map((pic) => (
                     <div
-                        key={pic}
+                        key={pic.url}
                         style={{
                             position: "relative",
                             width: "100%",
+                            breakInside: "avoid",
                             marginBottom: "10px",
                         }}
                     >
                         <Image
-                            src={pic}
+                            src={pic.url}
                             alt="Dog photo"
                             title="Dog photo"
-                            width={400} // width will scale to column width
-                            height={0} // we will let Next.js calculate height automatically
+                            width={pic.width} // width will scale to column width
+                            height={pic.height} // we will let Next.js calculate height automatically
                             style={{
                                 width: "100%",
-                                height: "auto",
+                                height: "100%",
                                 objectFit: "cover",
                                 borderRadius: "8px",
                                 display: "block",
@@ -57,7 +59,7 @@ export default function GalleryComponent() {
                         />
                     </div>
                 ))}
-            </div>
-        </section>
+            </div >
+        </>
     );
 }

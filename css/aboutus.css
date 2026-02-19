@@ -1,6 +1,7 @@
 .aboutus-main {
     width: 100%;
     scroll-margin-top: 100px;
+    contain: layout style;
 }
 
 .aboutus-submain {
@@ -16,6 +17,7 @@
 
 .aboutus-header {
     font-size: clamp(1.5rem, 5vw, 2.5rem);
+    min-height: 1.3em;
     /* Fluid typography */
     font-weight: 700;
     color: var(--color-two);
@@ -35,6 +37,7 @@
 
 .subheadline {
     color: var(--text-color-two);
+    min-height: 3em;
     max-width: 600px;
     margin: 0 auto;
     font-style: italic;
@@ -47,9 +50,11 @@
 /* Content Grid */
 .about-content-grid {
     display: grid;
+    align-items: stretch;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin-top: 40px;
+    height: 100%;
 }
 
 .about-card {
@@ -57,6 +62,7 @@
     /* Subtle glass effect on your cream */
     padding: 40px;
     border-radius: 20px;
+    will-change: transform;
     border: 1px solid var(--color-three);
     transition: transform 0.3s ease;
 }
