@@ -7,6 +7,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 const resources = {
     en: {
         translation: {
+            "HappyClients": "OUR HAPPY CLIENTS",
             "Tiktok": "Tiktok",
             "Facebook": "Facebook",
             "Instagram": "Instagram",
@@ -64,6 +65,7 @@ const resources = {
     },
     ka: {
         translation: {
+            "HappyClients": "ჩვენი ბედნიერი კლიენტები",
             "Tiktok": "ტიკტოკი",
             "Facebook": "ფეისბუქი",
             "Instagram": "ინსტაგრამი",

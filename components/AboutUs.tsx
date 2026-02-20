@@ -30,14 +30,14 @@ function AboutUs() {
                             <div className="about-titles">{obj.ourStoryTitle}</div>
                             <div className="separator"></div>
                         </div>
-                        <p className="about-text">{obj.ourStory}</p>
+                        <p className={`about-text ${isDarkmode ? "about-text-dark" : ""}`}>{obj.ourStory}</p>
                     </div>
                     <div className={`about-card ${isDarkmode ? "about-card-dark" : ""}`}>
                         <div className="title-separator">
                             <div className="about-titles">{obj.ourPhilosophyTitle}</div>
                             <div className="separator"></div>
                         </div>
-                        <p className="about-text">{obj.ourPhilosophy}</p>
+                        <p className={`about-text ${isDarkmode ? "about-text-dark" : ""}`}>{obj.ourPhilosophy}</p>
                     </div>
 
                 </div>

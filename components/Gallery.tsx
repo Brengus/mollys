@@ -1,7 +1,9 @@
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 
 export default function GalleryComponent() {
+    const { t } = useTranslation();
     const pictures = [
         { url: "/gallery/dog1.jpeg", width: 4026, height: 6039, loading: "priority" },
         { url: "/gallery/dog2.jpeg", width: 4204, height: 6306, loading: "priority" },
@@ -22,7 +24,7 @@ export default function GalleryComponent() {
                 color: "var(--color-two)",
                 fontWeight: "700"
             }}>
-                OUR HAPPY CLIENTS
+                {t("HappyClients")}
             </h2>
 
             <div
