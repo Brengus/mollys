@@ -1,0 +1,33 @@
+.gallery {
+    column-count: 3;
+    column-gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    break-inside: avoid;
+    margin-bottom: 10px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    line-height: 1.5em;
+    margin-bottom: 4rem;
+    color: var(--color-two);
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        column-count: 1;
+    }
+}
