@@ -13,7 +13,7 @@ function Popup() {
                 }}
             >
                 <div className="text-wrapping">
-                    {t("Book Now")}
+                    {t("Book Now").toUpperCase()}
                 </div>
             </button >
         </>

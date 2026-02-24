@@ -6,12 +6,12 @@ function AboutUs() {
     const { t } = useTranslation();
     const isDarkmode: boolean = useSelector((state: any) => state.darkmode.isDarkmode);
     const obj = {
-        header: t("About-h2"),
-        headline: t("About-h1"),
-        subheadline: t("About-h3"),
-        ourStoryTitle: t("Story"),
+        header: t("About-h2").toUpperCase(),
+        headline: t("About-h1").toUpperCase(),
+        subheadline: t("About-h3").toUpperCase(),
+        ourStoryTitle: t("Story").toUpperCase(),
         ourStory: t("Story-p"),
-        ourPhilosophyTitle: t("Philosophy"),
+        ourPhilosophyTitle: t("Philosophy").toUpperCase(),
         ourPhilosophy: t("Philosophy-p")
     };
 
@@ -19,21 +19,21 @@ function AboutUs() {
         <section id="aboutus" className="aboutus-main">
             <div className="aboutus-submain">
                 <div className="aboutus-header-group">
-                    <div className="headline">{obj.headline}</div>
+                    <h3 className="headline">{obj.headline}</h3>
                     <h1 className={`aboutus-header ${isDarkmode ? "aboutus-header-dark" : ""}`}>{obj.header}</h1>
                     <p className={`subheadline ${isDarkmode ? "aboutus-header-dark" : ""}`}>{obj.subheadline}</p>
                 </div>
                 <div className="about-content-grid">
                     <div className={`about-card ${isDarkmode ? "about-card-dark" : ""}`}>
                         <div className="title-separator">
-                            <div className="about-titles">{obj.ourStoryTitle}</div>
+                            <h3 className="about-titles">{obj.ourStoryTitle}</h3>
                             <div className="separator"></div>
                         </div>
                         <p className={`about-text ${isDarkmode ? "about-text-dark" : ""}`}>{obj.ourStory}</p>
                     </div>
                     <div className={`about-card ${isDarkmode ? "about-card-dark" : ""}`}>
                         <div className="title-separator">
-                            <div className="about-titles">{obj.ourPhilosophyTitle}</div>
+                            <h3 className="about-titles">{obj.ourPhilosophyTitle}</h3>
                             <div className="separator"></div>
                         </div>
                         <p className={`about-text ${isDarkmode ? "about-text-dark" : ""}`}>{obj.ourPhilosophy}</p>

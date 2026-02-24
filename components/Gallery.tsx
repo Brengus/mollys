@@ -18,7 +18,7 @@ export default function GalleryComponent() {
     return (
         <>
             <h2 className="gallery-title">
-                {t("HappyClients")}
+                {t("HappyClients").toUpperCase()}
             </h2>
 
             <div

@@ -82,7 +82,7 @@ function Navigation() {
                     </div>
                     <div className={`nav-buttons item ${menuOpen ? "open" : ""} ${isDarkmode ? "open-dark" : ""}`}>
                         {linkArray.map((link: { id: string, label: string }, index: number) => {
-                            return <Link href={`/${lng}#${link.id}`} key={link.id} className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} ${isScrolled ? "active" : ""}`} onClick={() => handleClick(link.id)}>{link.label}</Link>
+                            return <Link href={`/${lng}#${link.id}`} key={link.id} className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} ${isScrolled ? "active" : ""}`} onClick={() => handleClick(link.id)}>{link.label.toUpperCase()}</Link>
                         })}
                         <button className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} button-hide-desktop`}
                             onClick={() => {

@@ -11,7 +11,7 @@ export default function RunningLine() {
             <div className="column">
                 <div className="clients">
                     <div className="main-container">
-                        <h3 className={`running-line-title ${isDarkmode ? "running-line-title-dark" : ""}`}>{t("Partners")}</h3>
+                        <h3 className={`running-line-title ${isDarkmode ? "running-line-title-dark" : ""}`}>{t("Partners").toUpperCase()}</h3>
                         <div className="logos">
                             <LogoSlide className="slide-animation" />
                             <LogoSlide className="slide-animation" />

@@ -5,7 +5,7 @@ function Service({ darkmode, keyItem, title, image, description }: { darkmode: b
 
     return <div key={keyItem} className={`service-card ${darkmode ? "service-card-dark" : ""}`}>
         <Image src={image} width="50" height="50" alt={title} style={{ gridArea: "image" }} loading="lazy" />
-        <h3 style={{ gridArea: "title" }}>{title}</h3>
+        <h3 style={{ gridArea: "title" }}>{title.toUpperCase()}</h3>
         <p style={{ gridArea: "description" }}>{description}</p>
     </div>
 }

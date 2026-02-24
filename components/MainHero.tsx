@@ -11,7 +11,7 @@ function MainHero({ lng }: { lng?: string }) {
         <>
             <div id="home" className={`main-hero ${isDarkmode ? "main-hero-dark" : "main-hero-light"}`}>
                 <div className="main-hero-grid">
-                    <div className={`main-hero-text ${isDarkmode ? "main-hero-text-dark" : ""} ${lng === "ge" ? "main-hero-text-georgian" : ""}`}>{t("MainHero")}</div>
+                    <div className={`main-hero-text ${isDarkmode ? "main-hero-text-dark" : ""} ${lng === "ge" ? "main-hero-text-georgian" : ""}`}>{t("MainHero").toUpperCase()}</div>
                     <Video />
                 </div>
             </div>

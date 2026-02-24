@@ -30,7 +30,7 @@ function Services() {
 
     return (
         <>
-            <div id="services" className={`service-title ${isDarkmode ? "service-title-dark" : ""}`}>{t("Services")}</div>
+            <div id="services" className={`service-title ${isDarkmode ? "service-title-dark" : ""}`}>{t("Services").toUpperCase()}</div>
             <div className="services">
                 {objectArray.map((service, index) => (
                     <Service key={index} darkmode={isDarkmode} keyItem={index} title={service.title} image={service.image} description={service.description} />
