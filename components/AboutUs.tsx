@@ -23,7 +23,6 @@ function AboutUs() {
                     <h1 className={`aboutus-header ${isDarkmode ? "aboutus-header-dark" : ""}`}>{obj.header}</h1>
                     <p className={`subheadline ${isDarkmode ? "aboutus-header-dark" : ""}`}>{obj.subheadline}</p>
                 </div>
-
                 <div className="about-content-grid">
                     <div className={`about-card ${isDarkmode ? "about-card-dark" : ""}`}>
                         <div className="title-separator">

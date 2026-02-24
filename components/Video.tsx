@@ -33,19 +33,11 @@ function Video() {
                 preload="none"
                 style={{ width: "100%", height: "auto" }}
             >
-                <source
-                    src="/video.mov"
-                    type='video/quicktime; codecs="hvc1"'
-                />
-                <source
-                    src="/output.webm"
-                    type="video/webm"
-                />
+                <source src="/video.mov" type='video/quicktime; codecs="hvc1"' />
+                <source src="/output.webm" type="video/webm" />
             </video>
-
         </div>
 
     )
 }
-
 export default Video;

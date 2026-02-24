@@ -51,7 +51,7 @@ const resources = {
             "Saturday": "Saturday",
             "Sunday": "Sunday",
             "Address": "Address",
-            "Address-p": "71 Amsteroum Avenue Cronish Night, NY 35098",
+            "Address-p": "Ana Politkovskaya Street 4g, Jikia Residence, Tbilisi, Georgia",
             "Phone": "Phone",
             "Phone-reception": "Reception: ",
             "Phone-office": "Office: ",
@@ -60,7 +60,8 @@ const resources = {
             "Email-site": "Site: ",
             "Social": "Social Media",
             "Book Now": "Book Now",
-            "Map": "ADDRESS"
+            "Map": "ADDRESS",
+            "Gallery": "GALLERY"
         }
     },
     ka: {
@@ -109,16 +110,17 @@ const resources = {
             "Saturday": "შაბათი",
             "Sunday": "კვირა",
             "Address": "მისამართი",
-            "Address-p": "ამსტერდამის გამზირი 71, კრონიშ ნაითი, ნიუ-იორკი 35098",
+            "Address-p": "ანა პოლიტკოვსკაიას ქუჩა 4გ, ჯიქია რეზიდენსი, თბილისი, საქართველო",
             "Phone": "ტელეფონი",
-            "Phone-reception": "მისაღები: ",
+            "Phone-reception": "მიმღები: ",
             "Phone-office": "ოფისი: ",
             "Email": "ელ-ფოსტა",
             "Email-office": "ოფისი: ",
             "Email-site": "საიტი: ",
             "Social": "სოციალური ქსელები",
             "Book Now": "დაჯავშნე ახლავე",
-            "Map": "მისამართი"
+            "Map": "მისამართი",
+            "Gallery": "გალერეა"
         }
     }
 };

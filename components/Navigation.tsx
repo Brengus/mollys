@@ -30,6 +30,7 @@ function Navigation() {
 
     const linkArray = [
         { id: "home", label: t("Home") },
+        { id: "gallery", label: t("Gallery") },
         { id: "services", label: t("Services") },
         { id: "aboutus", label: t("About") },
         { id: "ourpartners", label: t("Partners") },
@@ -52,11 +53,8 @@ function Navigation() {
         if (scrollRef.current && ghostRef.current) {
             const original = scrollRef.current.getBoundingClientRect();
             const ghost = ghostRef.current.getBoundingClientRect();
-
             const difference = Math.abs(original.top - ghost.top);
-
             setIsScrolled(difference > 5);
-
         }
     }
 
@@ -76,7 +74,6 @@ function Navigation() {
     return (
         <>
             <div className="ghost" ref={ghostRef}></div>
-
             <div className={`main ${isScrolled ? isDarkmode ? "active-dark" : "active" : ""}`} ref={scrollRef}>
                 <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} isDarkmode={isDarkmode} />
                 <nav className="navigation-class">
