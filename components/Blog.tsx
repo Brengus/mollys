@@ -1,0 +1,34 @@
+'use client';
+import Link from "next/link";
+import Image from "next/image";
+import "@/css/blog.css";
+import Blogs from "@/blogposts/blogposts.json";
+import { useSelector } from "react-redux";
+import { useTranslation } from 'next-i18next';
+
+interface State {
+    darkmode: {
+        isDarkmode: boolean;
+    }
+}
+export default function Blog() {
+    const { t } = useTranslation();
+    const isDarkmode: boolean = useSelector((state: State) => state.darkmode.isDarkmode);
+    return <>
+        <div id="blog" className={`blog-main-title ${isDarkmode ? "darkmode" : ""}`}>{t("Blog").toUpperCase()}</div>
+        <div className="blog-grid">
+            {Blogs.map((blog) => {
+                return <div key={blog.id}>
+                    <Link href={{
+                        pathname: `blog/${blog.id}`,
+                    }}>
+                        <Image src={blog.image} alt={blog.ka.title} width={400} height={400} style={{ width: "100%", height: "200px", objectFit: "cover" }} loading="lazy" />
+                        <h2 className="blog-title">{blog.ka.title}</h2>
+                        <p className={`blog-text ${isDarkmode ? "darkmode" : ""}`} >{blog.ka.hook}</p>
+                    </Link>
+                </div>
+            })}
+        </div>
+
+    </>
+}

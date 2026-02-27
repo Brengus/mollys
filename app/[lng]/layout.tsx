@@ -28,7 +28,7 @@ import Footer from '@/components/Footer';
 import Popup from '@/components/Popup';
 import "../globals.css";
 
-export default async function LngLayout({
+async function LngLayout({
     children,
     params
 }: {
@@ -57,3 +57,5 @@ export default async function LngLayout({
         </html>
     );
 }
+
+export default LngLayout

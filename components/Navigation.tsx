@@ -29,21 +29,16 @@ function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
 
     const linkArray = [
-        { id: "home", label: t("Home") },
-        { id: "gallery", label: t("Gallery") },
-        { id: "services", label: t("Services") },
-        { id: "aboutus", label: t("About") },
-        { id: "ourpartners", label: t("Partners") },
-        { id: "map", label: t("Map") },
+        { id: "", label: t("Home") },
+        { id: "/gallery", label: t("Gallery") },
+        { id: "/services", label: t("Services") },
+        { id: "/about", label: t("About") },
+        { id: "#ourpartners", label: t("Partners") },
+        { id: "#map", label: t("Map") },
+        { id: "/blog", label: t("Blog") },
     ];
 
-    const handleClick = (sectionId: string) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({ behavior: "smooth", block: "start" });
-        } else {
-            console.warn(`Section with ID ${sectionId} not found.`);
-        }
+    const handleClick = () => {
         if (menuOpen) {
             setMenuOpen(false);
         }
@@ -78,11 +73,13 @@ function Navigation() {
                 <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} isDarkmode={isDarkmode} />
                 <nav className="navigation-class">
                     <div className="item">
-                        <Image src="/logos/title.webp" width="72" height="22" title={t("Home")} alt="logo" className="logo" onClick={() => handleClick("home")} />
+                        <Link href={`/${lng}`}>
+                            <Image src="/logos/title.webp" width="72" height="22" title={t("Home")} alt="logo" className="logo" />
+                        </Link>
                     </div>
                     <div className={`nav-buttons item ${menuOpen ? "open" : ""} ${isDarkmode ? "open-dark" : ""}`}>
                         {linkArray.map((link: { id: string, label: string }, index: number) => {
-                            return <Link href={`/${lng}#${link.id}`} key={link.id} className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} ${isScrolled ? "active" : ""}`} onClick={() => handleClick(link.id)}>{link.label.toUpperCase()}</Link>
+                            return <Link href={`/${lng}${link.id}`} key={link.id} className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} ${isScrolled ? "active" : ""}`} onClick={() => handleClick()}>{link.label.toUpperCase()}</Link>
                         })}
                         <button className={`item-buttons ${isDarkmode ? "button-dark" : "button-light"} button-hide-desktop`}
                             onClick={() => {
