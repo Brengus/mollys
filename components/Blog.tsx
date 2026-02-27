@@ -11,7 +11,7 @@ interface State {
         isDarkmode: boolean;
     }
 }
-export default function Blog() {
+export default function Blog({ lng }: { lng: string }) {
     const { t } = useTranslation();
     const isDarkmode: boolean = useSelector((state: State) => state.darkmode.isDarkmode);
     return <>
@@ -20,7 +20,7 @@ export default function Blog() {
             {Blogs.map((blog) => {
                 return <div key={blog.id}>
                     <Link href={{
-                        pathname: `blog/${blog.id}`,
+                        pathname: `${lng ? 'ka/' : ''}blog/${blog.id}`,
                     }}>
                         <Image src={blog.image} alt={blog.ka.title} width={400} height={400} style={{ width: "100%", height: "200px", objectFit: "cover" }} loading="lazy" />
                         <h2 className="blog-title">{blog.ka.title}</h2>

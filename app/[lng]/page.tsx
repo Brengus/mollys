@@ -31,7 +31,7 @@ function MainPage() {
             <section id="ourpartners" style={{ height: '300px' }}>
                 <RunningLine />
             </section>
-            <Blog />
+            <Blog lng={lng} />
             <section id="map">
                 <div style={{ height: '350px' }}>
                     <Map />
