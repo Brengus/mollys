@@ -28,9 +28,10 @@
 @media (max-width: 768px) {
     .service-main {
         grid-template-columns: 1fr;
+        margin: 10px;
         height: auto;
         background-image: linear-gradient(to bottom, var(--color-three), var(--color-one));
-        border-radius: 50% 50% 0% 0% / 50% 50% 0% 0%;
+        border-radius: 50% 50% 0% 0% / 25% 25% 0% 0%;
     }
 
     .service-main img {
