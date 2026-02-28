@@ -3,6 +3,7 @@ import { useSyncLanguage } from '../useSyncLanguage';
 import MainHero from '@/components/MainHero';
 import Hero from '@/components/Hero';
 import RunningLine from '@/components/RunningLine';
+import Why from '@/components/Why';
 import Map from '@/components/Map';
 import { appWithTranslation } from 'next-i18next';
 import { useParams } from 'next/navigation';
@@ -27,10 +28,10 @@ function MainPage() {
             {/* <section id="services" style={{ minHeight: '600px' }}>
                 <Services />
             </section> */}
-            {/* <AboutUs /> */}
             <section id="ourpartners" style={{ height: '300px' }}>
                 <RunningLine />
             </section>
+            <Why />
             <Blog lng={lng} />
             <section id="map">
                 <div style={{ height: '350px' }}>

@@ -4,7 +4,9 @@
   font-size: 14px;
   --background-color: var(--color-one);
 
-  --color-four: #B4B56D;
+  /* --color-four: #B4B56D; */
+
+  --color-four: #9ab973;
   --color-three: #8DB2A2;
 
   --color-one: #f5f3ef;

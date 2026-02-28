@@ -27,7 +27,7 @@ export default function BlogPost() {
         <div className="blog-post-grid">
             <div className="blog-post">
                 <div className={`blog-title`}>{blog.ka.title}</div>
-                <Image src={blog.image} alt="" width={400} height={200} style={{ width: "100%", height: "auto", objectFit: "cover" }} loading="lazy" />
+                <Image className="blog-post-image" src={blog.image} alt="" width={400} height={200} loading="lazy" />
                 <div className={`blog-post-description ${isDarkmode ? "darkmode" : ""}`}>{blog.ka.description}</div>
             </div>
             <div className="blog-nav">

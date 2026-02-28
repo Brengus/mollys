@@ -15,18 +15,16 @@ function Footer() {
                 </div>
                 <div className="card-footer">
                     <div className="title-footer">{t("Phone").toUpperCase()}</div>
-                    <div>{t("Phone-reception")} : +995 590 010 203</div>
-                    <div>{t("Phone-office")} : +995 510 020 453</div>
+                    <div><a href="tel:+995568611223">+995 568 611 223</a></div>
                 </div>
                 <div className="card-footer">
                     <div className="title-footer">{t("Email").toUpperCase()}</div>
-                    <div><span>{t("Email-office")} : </span><a href="mailto:sao@example.com" className="link-footer">info@mollys.com</a></div>
-                    <div><span>{t("Email-site")} : </span><a href="mailto:sao@example.com" className="link-footer">admin@mollys.com</a></div>
+                    <div><a href="mailto:mollys.grooming.daycare@gmail.com" className="link-footer">mollys.grooming.daycare@gmail.com</a></div>
                 </div>
                 <div className="card-footer">
                     <div className="title-footer">{t("Social").toUpperCase()}</div>
                     <div className="footer-icons-list">
-                        <Image src="/social/tik-tok.webp" width="32" height="32" alt="Tiktok" title={t("Tiktok")} className="footer-icon" loading="lazy" />
+                        <Image src="/social/tik-tok.webp" width="32" height="32" alt="Tiktok" title={t("Tiktok")} className="footer-icon" loading="lazy" onClick={() => window.open("https://www.tiktok.com/@mollys_ge?_r=1&_t=ZS-94H9ezPTjv6", "_blank")} />
                         <Image src="/social/instagram.webp" width="32" height="32" alt="Instagram" title={t("Instagram")} className="footer-icon" loading="lazy" onClick={() => window.open("https://www.instagram.com/mollys_ge?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "_blank")} />
                         <Image src="/social/facebook.webp" width="32" height="32" title={t("Facebook")} alt="Facebook" className="footer-icon" loading="lazy" />
                     </div>

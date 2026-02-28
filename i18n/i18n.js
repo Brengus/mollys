@@ -62,7 +62,8 @@ const resources = {
             "Book Now": "Book Now",
             "Map": "ADDRESS",
             "Gallery": "GALLERY",
-            "Blog": "BLOG"
+            "Blog": "BLOG",
+            "Why-title": "WHY CHOOSE Molly's?",
         }
     },
     ka: {
@@ -122,7 +123,8 @@ const resources = {
             "Book Now": "დაჯავშნე ახლავე",
             "Map": "მისამართი",
             "Gallery": "გალერეა",
-            "Blog": "ბლოგი"
+            "Blog": "ბლოგი",
+            "Why-title": "რატომ Molly's?",
         }
     }
 };

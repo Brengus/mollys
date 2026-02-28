@@ -18,11 +18,11 @@ export default function Blog({ lng }: { lng: string }) {
         <div id="blog" className={`blog-main-title ${isDarkmode ? "darkmode" : ""}`}>{t("Blog").toUpperCase()}</div>
         <div className="blog-grid">
             {Blogs.map((blog) => {
-                return <div key={blog.id}>
+                return <div key={blog.id} className="blog-card">
                     <Link href={{
                         pathname: `${lng ? 'ka/' : ''}blog/${blog.id}`,
                     }}>
-                        <Image src={blog.image} alt={blog.ka.title} width={400} height={400} style={{ width: "100%", height: "200px", objectFit: "cover" }} loading="lazy" />
+                        <Image className="blog-image" src={blog.image} alt={blog.ka.title} width={400} height={400} loading="lazy" />
                         <h2 className="blog-title">{blog.ka.title}</h2>
                         <p className={`blog-text ${isDarkmode ? "darkmode" : ""}`} >{blog.ka.hook}</p>
                     </Link>
