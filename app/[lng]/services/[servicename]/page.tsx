@@ -14,7 +14,7 @@ export default function Page() {
     if (!data) return <NotFound />
     return <>
         <div className="service-main">
-            <Image src={data.image} alt={data.title} width={400} height={400} style={{ borderRadius: "100%", width: "300px", height: "300px", }} />
+            <Image src={data.image} alt={data.title} width={400} height={400} />
             <div>
                 <h2>{t(data.title)}</h2>
                 <p>{t(data?.description)}</p>
