@@ -19,31 +19,31 @@
     },
     {
         "title": "Paws and Claws",
-        "image": "/servicesimg/paw.webp",
+        "image": "/gallery/dog4.jpeg",
         "description": "Paws and Claws-p",
         "url": "paws-and-claws"
     },
     {
         "title": "Ear Cleaning",
-        "image": "/servicesimg/ears.webp",
+        "image": "/gallery/dog5.jpeg",
         "description": "Ear Cleaning-p",
         "url": "ear-cleaning"
     },
     {
         "title": "Tick Removal",
-        "image": "/servicesimg/insect.webp",
+        "image": "/gallery/dog6.jpeg",
         "description": "Tick Removal-p",
         "url": "tick-removal"
     },
     {
         "title": "Face Trim",
-        "image": "/servicesimg/dog.webp",
+        "image": "/gallery/dog4.jpeg",
         "description": "Face Trim-p",
         "url": "face-trim"
     },
     {
         "title": "Spritz",
-        "image": "/servicesimg/spray.webp",
+        "image": "/gallery/dog2.jpeg",
         "description": "Spritz-p",
         "url": "spritz"
     }

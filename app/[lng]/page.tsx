@@ -20,14 +20,8 @@ function MainPage() {
                 <MainHero lng={lng} />
             </section>
             <section style={{ minHeight: 400 }}>
-                <Hero />
+                <Hero lng={lng} />
             </section>
-            {/* <section id="gallery" style={{ maxWidth: "1200px", minHeight: "1200px", margin: "0 auto", padding: "20px" }}>
-                <GalleryComponent />
-            </section> */}
-            {/* <section id="services" style={{ minHeight: '600px' }}>
-                <Services />
-            </section> */}
             <section id="ourpartners" style={{ height: '300px' }}>
                 <RunningLine />
             </section>

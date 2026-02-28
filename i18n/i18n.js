@@ -64,6 +64,7 @@ const resources = {
             "Gallery": "GALLERY",
             "Blog": "BLOG",
             "Why-title": "WHY CHOOSE Molly's?",
+            "View-more": "VIEW MORE"
         }
     },
     ka: {
@@ -125,6 +126,7 @@ const resources = {
             "Gallery": "გალერეა",
             "Blog": "ბლოგი",
             "Why-title": "რატომ Molly's?",
+            "View-more": "იხილეთ მეტი"
         }
     }
 };
