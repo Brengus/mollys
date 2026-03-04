@@ -25,8 +25,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
 
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import Popup from '@/components/Popup';
-import Whatsapp from '@/components/Whatsapp';
+// import Popup from '@/components/Popup';
+// import Whatsapp from '@/components/Whatsapp';
+import ChatBot from '@/components/chatbot/ChatBot';
 import "../globals.css";
 
 async function LngLayout({
@@ -52,8 +53,9 @@ async function LngLayout({
                     <main>{children}</main>
 
                     <Footer />
-                    <Whatsapp />
-                    <Popup />
+                    <ChatBot />
+                    {/* <Whatsapp /> */}
+                    {/* <Popup /> */}
                 </Providers>
             </body>
         </html>

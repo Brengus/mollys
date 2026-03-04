@@ -31,6 +31,7 @@ function Video() {
                 loop
                 autoPlay
                 preload="none"
+                className='optimized-video'
                 style={{ width: "100%", height: "auto" }}
             >
                 <source src="/video.mov" type='video/quicktime; codecs="hvc1"' />

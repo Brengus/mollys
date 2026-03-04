@@ -14,7 +14,7 @@ export default function Language({ LanguageClass, LanguageTitle, lng }: { Langua
             {
                 lng === "ka" ?
                     <Link href={`/en`}>
-                        <Image width="22" height="22" className="language" loading="lazy" onClick={() => handleLanguageChange(lng === "ka" ? "en" : "ka")} src={lng === "ka" ? "/us.webp" : "/ge.webp"} alt={lng === "ka" ? "En" : "Ge"} />
+                        <Image width="22" height="22" className="language" loading="lazy" onClick={() => handleLanguageChange("en")} src={"/ge.webp"} alt={"Ka"} />
                     </Link>
                     :
                     <Link href={`/ka`}>

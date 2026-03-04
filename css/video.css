@@ -10,4 +10,11 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background: transparent;
+}
+
+video {
+    mix-blend-mode: normal;
+    filter: contrast(2) saturate(5);
+    WebkitFilter: contrast(1.1) saturate(1.15);
 }

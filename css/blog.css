@@ -22,7 +22,7 @@
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 50%;
-    corner-shape: squircle;
+    border-radius: 35% 35% 35% 35% / 35% 35% 35% 35%;
 }
 
 .blog-title {
@@ -69,8 +69,7 @@
     height: auto;
     aspect-ratio: 1;
     object-fit: cover;
-    border-radius: 50%;
-    corner-shape: squircle;
+    border-radius: 35% 35% 35% 35% / 35% 35% 35% 35%;
     margin-bottom: 20px;
 }
 
@@ -93,6 +92,11 @@
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 10px;
+}
+
+.blog-nav-item img {
+    width: 80px;
+    height: 80px;
 }
 
 

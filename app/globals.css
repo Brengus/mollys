@@ -10,7 +10,8 @@
   --color-three: #8DB2A2;
 
   --color-one: #f5f3ef;
-  --color-popup: #E4704B;
+  /* --color-popup: #E4704B; */
+  --color-popup: #ff5911;
 
   --color-two: #00654b;
   --text-color-two: hsl(107, 36%, 30%);
@@ -20,6 +21,11 @@
 
 
   --color-popup-hover: hsl(15, 75%, 80%);
+}
+
+@theme {
+  --color-brand-primary: #ff5911;
+  --color-brand-bg: #f5f3ef;
 }
 
 img {
