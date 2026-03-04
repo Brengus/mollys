@@ -16,5 +16,5 @@
 video {
     mix-blend-mode: normal;
     filter: contrast(2) saturate(5);
-    WebkitFilter: contrast(1) saturate(1);
+    -webkit-filter: contrast(1) saturate(1);
 }
