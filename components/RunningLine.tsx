@@ -1,6 +1,7 @@
 import LogoSlide from "./LogoSlide";
 import { useSelector } from "react-redux";
 import { useTranslation } from "next-i18next";
+import Dog from "./Dog";
 import "../css/RunningLine.css"
 
 export default function RunningLine() {
@@ -8,6 +9,8 @@ export default function RunningLine() {
     const isDarkmode: boolean = useSelector((state: any) => state.darkmode.isDarkmode);
     return (
         <div id="ourpartners" className="white-background">
+            <Dog rightPos="20%" topPos="-10px" />
+            <Dog rightPos="80%" topPos="100px" />
             <div className="column">
                 <div className="clients">
                     <div className="main-container">

@@ -5,13 +5,18 @@ import Image from 'next/image'; // Optimized Next.js Image component
 
 function Footer() {
     const { t } = useTranslation();
+    // backgroundColor: "var(--color-two)",
 
     return (
-        <div style={{ backgroundColor: "var(--color-two)" }}>
+        <div style={{ backgroundColor: "#36404A" }}>
             <div className="main-footer">
                 <div className="card-footer">
-                    <div className="title-footer">{t("Address").toUpperCase()}</div>
-                    <div>{t("Address-p")}</div>
+                    <div className="title-footer">
+                        {t("Address").toUpperCase()}
+                    </div>
+                    <div>
+                        <a href="https://maps.app.goo.gl/Jdq79VnCxxiASKY5A">{t("Address-p")}</a>
+                    </div>
                 </div>
                 <div className="card-footer">
                     <div className="title-footer">{t("Phone").toUpperCase()}</div>

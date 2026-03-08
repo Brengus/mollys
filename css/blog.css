@@ -9,9 +9,9 @@
 
 .blog-grid {
     max-width: 1200px;
-    gap: 20px;
+    gap: 1.5rem;
     margin: 50px auto;
-    padding: 10px;
+    padding: 10px 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -21,8 +21,17 @@
     height: 300px;
     aspect-ratio: 1;
     object-fit: cover;
-    border-radius: 50%;
-    border-radius: 35% 35% 35% 35% / 35% 35% 35% 35%;
+    transition: transform 0.4s ease-in-out;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.blog-image:hover {
+    transform: scale(1.1);
+}
+
+.blog-card {
+    overflow: hidden;
 }
 
 .blog-title {
@@ -39,6 +48,7 @@
     color: var(--color-two);
     margin: 10px auto;
     text-align: center;
+    font-weight: 500;
     width: 100%;
 }
 

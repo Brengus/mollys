@@ -10,10 +10,12 @@
   --color-three: #8DB2A2;
 
   --color-one: #f5f3ef;
-  /* --color-popup: #E4704B; */
   --color-popup: #ff5911;
 
-  --color-two: #00654b;
+
+  /* --color-two: #00654b; */
+
+  --color-two: #0b172a;
   --text-color-two: hsl(107, 36%, 30%);
   --text-color-three: hsl(107, 36%, 60%);
 
@@ -38,7 +40,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Effra', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   font-display: swap;

@@ -13,6 +13,7 @@ export default function GalleryComponent() {
         { url: "/gallery/dog5.jpeg", width: 4171, height: 2781, loading: "lazy" },
         { url: "/gallery/dog6.jpeg", width: 4956, height: 2868, loading: "lazy" },
         { url: "/gallery/dog7.jpeg", width: 5184, height: 3888, loading: "lazy" },
+        { url: "/logos/background.png", width: 3900, height: 2781, loading: "lazy" }
     ];
 
     return (
