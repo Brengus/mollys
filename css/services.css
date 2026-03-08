@@ -80,8 +80,7 @@
     height: 50px;
     margin: auto;
     aspect-ratio: 1;
-    border-radius: 50%;
-    corner-shape: squircle;
+    border-radius: 35% 35% 35% 35% / 35% 35% 35% 35%;
     background: #8458ff;
 }
 

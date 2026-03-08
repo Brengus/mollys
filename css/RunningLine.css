@@ -44,7 +44,6 @@
 .column {
     display: flex;
     justify-content: center;
-    /* overflow: hidden; */
 }
 
 .clients {
@@ -55,7 +54,6 @@
 .white-background {
     max-width: 100%;
     padding-top: 4rem;
-    /* margin: 3rem auto; */
     overflow: hidden;
     position: relative;
     height: auto;

@@ -18,13 +18,16 @@
 .title-footer {
     line-height: 3em;
     font-weight: 500;
-    color: var(--color-popup);
+    /* color: var(--color-popup); */
+    color: white;
     /* Terracotta - Stands out clearly */
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 .card-footer {
     text-align: left;
+    font-size: 1.1rem;
+    color: white;
 }
 
 .link-footer {

@@ -14,9 +14,7 @@
 }
 
 .why-text {
-    border-radius: 8px;
     background-color: var(--color-popup);
-    /* Terracotta */
     box-shadow: var(--color-black) 0px 3px 3px 0px;
 }
 
@@ -61,24 +59,10 @@
     scroll-margin-top: 100px;
 }
 
-/* HTML: <div class="grid-lines"></div> */
-.grid-cell {
-    --s: 80px;
-    /* control the size of the grid */
-    --n: 4;
-    /* control the granularity */
-    --t: 2px;
-    /* the thickness */
-    --g: 10px;
-    /* the gap between dashes */
-
-    --c: #ffffff 25%, #91909000 0;
-    background:
-        conic-gradient(at var(--g) var(--t), var(--c)) calc((var(--s)/var(--n) - var(--g) + var(--t))/2) 0/ calc(var(--s)/var(--n)) var(--s),
-        conic-gradient(from 180deg at var(--t) var(--g), var(--c)) 0 calc((var(--s)/var(--n) - var(--g) + var(--t))/2)/ var(--s) calc(var(--s)/var(--n));
-    /* you probably don't need to set any size in your case */
+.why-wave {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .why-desc {
@@ -90,7 +74,6 @@
 
 .why-subtitle {
     margin: 10px 0 10px 10px;
-    color: var(--color-popup);
 }
 
 .why-box-3 {
@@ -118,5 +101,9 @@
 
     .why-text {
         margin: 0 10px;
+    }
+
+    .why-wave {
+        top: 50px;
     }
 }
