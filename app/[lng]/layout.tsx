@@ -80,9 +80,75 @@ async function LngLayout({
         notFound();
     }
 
+    const schemaDescriptions: Record<string, string> = {
+        en: "Molly’s is a pet grooming salon in Tbilisi offering dog and cat grooming, bathing, trimming, nail clipping, and ear care. With a team of professional groomers, premium-quality products, and a dog daycare service, Molly’s provides a comfortable and caring space for your four-legged friend.",
+        ka: "Molly’s არის გრუმინგ სალონი თბილისში, რომელიც გთავაზობთ ძაღლისა და კატის გრუმინგს, დაბანას, კრეჭას, ბრჭყალების დაჭრასა და ყურების მოვლას. პროფესიონალი გრუმერების გუნდი, პრემიუმ ხარისხის კოსმეტიკა და ძაღლების ბაღის სერვისი Molly’s-ს თქვენი ოთხფეხა მეგობრისთვის კომფორტულ სივრცედ აქცევს."
+    };
+
+    const localBusinessSchema = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        name: "Molly’s",
+        url: "https://mollys.ge",
+        logo: "https://mollys.ge/logo.webp",
+        image: "https://mollys.ge/og-default.jpg",
+        description: schemaDescriptions[lng] || schemaDescriptions.en,
+        sameAs: [
+            "https://www.instagram.com/mollys_ge?igsh=eGw3OTVnc2RjcGVw&utm_source=qr",
+            "https://www.facebook.com/people/Mollys-grooming-daycare/61587126842591",
+            "https://www.tiktok.com/@mollys_ge?_r=1&_t=ZS-94H9ezPTjv6"
+        ],
+        telephone: "+995568611223",
+        email: "mollys.grooming.daycare@gmail.com",
+        address: {
+            "@type": "PostalAddress",
+            streetAddress: "Ana Politkovskaia 4g",
+            addressLocality: "Tbilisi",
+            postalCode: "0168",
+            addressCountry: "GE"
+        },
+        openingHoursSpecification: [
+            {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                opens: "10:00",
+                closes: "20:00"
+            }
+        ],
+        areaServed: {
+            "@type": "City",
+            name: "Tbilisi"
+        },
+        priceRange: "50–250 GEL",
+        hasMap: "https://www.google.com/maps/place/4g+Ana+Politkovskaia+St,+T'bilisi/@41.7162652,44.7075001,15z/data=!4m6!3m5!1s0x40447376d903b0fd:0x60785a626810a3a8!8m2!3d41.7193885!4d44.7156111!16s%2Fg%2F11rxnh0sw1?hl=en&entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D"
+    };
+
+    const websiteSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "Molly’s",
+        url: "https://mollys.ge"
+    };
+
     return (
         <html lang={lng}>
             <body>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+                />
                 <Providers>
                     <Navigation />
                     <main>
