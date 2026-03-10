@@ -33,7 +33,7 @@ export default function BlogPost() {
             <div className="blog-nav">
                 {Blogs.map((b) => {
                     return <Link href={{ pathname: `${b.id}` }} key={b.id} className={`blog-nav-item ${b.id === blogname ? "active" : ""}`}>
-                        <Image src={b.image} alt={b.ka.title} width={400} height={200} style={{ width: "80px", height: "80px", borderRadius: "35% 35% 35% 35% / 35% 35% 35% 35%", objectFit: "cover" }} loading="lazy" />
+                        <Image src={b.image} alt={b.ka.title} width={400} height={200} style={{ width: "80px", height: "80px", objectFit: "cover" }} loading="lazy" />
                         <div className="blog-nav-title">{b.ka.title}</div>
                     </Link>
                 })}

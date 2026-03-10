@@ -8,6 +8,32 @@
     gap: 2rem;
 }
 
+.service-list {
+    list-style-type: disc;
+    /* Options: disc, circle, square */
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+    /* Essential for bullets to show */
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    /* Space between points */
+}
+
+.service-item {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    /* Adjust based on your light/dark mode */
+}
+
+/* Optional: Custom bullet color */
+.service-list li::marker {
+    color: #6b4fbb;
+    /* Use your brand color here */
+    font-size: 1.2em;
+}
+
 .service-main h2 {
     margin: 0 auto;
     font-size: 2rem;
