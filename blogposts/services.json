@@ -1,50 +1,26 @@
 [
     {
-        "title": "Bathing",
+        "title": "Hygienic Grooming",
         "image": "/gallery/dog2.jpeg",
-        "description": "Bathing-p",
-        "url": "bathing"
+        "description": "Hygienic Grooming-p",
+        "url": "hygienic-grooming"
     },
     {
-        "title": "Clipping",
+        "title": "Full Grooming",
         "image": "/gallery/dog1.jpeg",
-        "description": "Clipping-p",
-        "url": "clipping"
+        "description": "Full Grooming-p",
+        "url": "full-grooming"
     },
     {
-        "title": "Safe Drying",
+        "title": "Exhibition Grooming",
         "image": "/gallery/dog3.jpeg",
-        "description": "Safe Drying-p",
-        "url": "safe-drying"
+        "description": "Exhibition Grooming-p",
+        "url": "exhibition-grooming"
     },
     {
-        "title": "Paws and Claws",
+        "title": "Additional Services",
         "image": "/gallery/dog4.jpeg",
-        "description": "Paws and Claws-p",
+        "description": "Additional Services-p",
         "url": "paws-and-claws"
-    },
-    {
-        "title": "Ear Cleaning",
-        "image": "/gallery/dog5.jpeg",
-        "description": "Ear Cleaning-p",
-        "url": "ear-cleaning"
-    },
-    {
-        "title": "Tick Removal",
-        "image": "/gallery/dog6.jpeg",
-        "description": "Tick Removal-p",
-        "url": "tick-removal"
-    },
-    {
-        "title": "Face Trim",
-        "image": "/gallery/dog4.jpeg",
-        "description": "Face Trim-p",
-        "url": "face-trim"
-    },
-    {
-        "title": "Spritz",
-        "image": "/gallery/dog2.jpeg",
-        "description": "Spritz-p",
-        "url": "spritz"
     }
 ]

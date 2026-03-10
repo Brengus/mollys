@@ -79,7 +79,8 @@
     height: auto;
     aspect-ratio: 1;
     object-fit: cover;
-    border-radius: 35% 35% 35% 35% / 35% 35% 35% 35%;
+    /* border-radius: 35% 35% 35% 35% / 35% 35% 35% 35%; */
+    /* border-radius: 7px; */
     margin-bottom: 20px;
 }
 
