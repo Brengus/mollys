@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
     };
 
     const descriptions: Record<string, string> = {
-        en: "Professional dog and cat grooming in Tbilisi. Molly’s Pet Grooming Spa offers bathing, trimming, styling and daycare services for your pet.",
+        en: "Professional dog and cat grooming in Tbilisi. Molly's Pet Grooming Spa offers bathing, trimming, styling and daycare services for your pet.",
         ka: "ცხოველების გრუმინგ სალონი თბილისში. ძაღლისა და კატის პროფესიონალური გრუმინგი: შეჭრა, გაპარსვა, დაბანა და სრულფასოვანი მოვლა."
     };
 
@@ -81,14 +81,14 @@ async function LngLayout({
     }
 
     const schemaDescriptions: Record<string, string> = {
-        en: "Molly’s is a pet grooming salon in Tbilisi offering dog and cat grooming, bathing, trimming, nail clipping, and ear care. With a team of professional groomers, premium-quality products, and a dog daycare service, Molly’s provides a comfortable and caring space for your four-legged friend.",
-        ka: "Molly’s არის გრუმინგ სალონი თბილისში, რომელიც გთავაზობთ ძაღლისა და კატის გრუმინგს, დაბანას, კრეჭას, ბრჭყალების დაჭრასა და ყურების მოვლას. პროფესიონალი გრუმერების გუნდი, პრემიუმ ხარისხის კოსმეტიკა და ძაღლების ბაღის სერვისი Molly’s-ს თქვენი ოთხფეხა მეგობრისთვის კომფორტულ სივრცედ აქცევს."
+        en: "Molly's is a pet grooming salon in Tbilisi offering dog and cat grooming, bathing, trimming, nail clipping, and ear care. With a team of professional groomers, premium-quality products, and a dog daycare service, Molly's provides a comfortable and caring space for your four-legged friend.",
+        ka: "Molly's არის გრუმინგ სალონი თბილისში, რომელიც გთავაზობთ ძაღლისა და კატის გრუმინგს, დაბანას, კრეჭას, ბრჭყალების დაჭრასა და ყურების მოვლას. პროფესიონალი გრუმერების გუნდი, პრემიუმ ხარისხის კოსმეტიკა და ძაღლების ბაღის სერვისი Molly's-ს თქვენი ოთხფეხა მეგობრისთვის კომფორტულ სივრცედ აქცევს."
     };
 
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        name: "Molly’s",
+        name: "Molly's",
         url: "https://mollys.ge",
         logo: "https://mollys.ge/logo.webp",
         image: "https://mollys.ge/og-default.jpg",
@@ -134,7 +134,7 @@ async function LngLayout({
     const websiteSchema = {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        name: "Molly’s",
+        name: "Molly's",
         url: "https://mollys.ge"
     };
 
