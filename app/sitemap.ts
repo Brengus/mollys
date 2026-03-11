@@ -32,23 +32,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  const mainServiceUrls: MetadataRoute.Sitemap = (services as ServiceItem[]).flatMap((service) =>
+  const allServiceItems = [
+    ...(services as ServiceItem[]),
+    ...(additionalServices as ServiceItem[]),
+  ];
+
+  const uniqueServiceSlugs = [...new Set(allServiceItems.map((item) => item.url))];
+
+  const serviceUrls: MetadataRoute.Sitemap = uniqueServiceSlugs.flatMap((slug) =>
     LANGUAGES.map((lng) => ({
-      url: `${BASE_URL}/${lng}/services/${service.url}`,
+      url: `${BASE_URL}/${lng}/services/${slug}`,
       lastModified,
       changeFrequency: 'monthly',
       priority: 0.7,
     }))
   );
 
-  const additionalServiceUrls: MetadataRoute.Sitemap = (additionalServices as ServiceItem[]).flatMap((service) =>
-    LANGUAGES.map((lng) => ({
-      url: `${BASE_URL}/${lng}/services/${service.url}`,
-      lastModified,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    }))
-  );
-
-  return [...staticUrls, ...mainServiceUrls, ...additionalServiceUrls];
+  return [...staticUrls, ...serviceUrls];
 }
