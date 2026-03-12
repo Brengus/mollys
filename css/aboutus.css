@@ -79,13 +79,12 @@
 
 .separator {
     flex: 1;
-    height: 1px;
+    height: 2px;
     background-color: var(--color-three);
 }
 
 .about-titles {
-    font-size: 0.9rem;
-    letter-spacing: 0.15em;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--color-two);
     background-color: var(--color-three);
@@ -96,7 +95,6 @@
 .about-text {
     display: flex;
     flex: 1;
-    letter-spacing: 0.03em;
     font-size: 1.05rem;
     line-height: 1.8;
     color: var(--color-one);

@@ -26,15 +26,15 @@ export default function BlogPost() {
     return <>
         <div className="blog-post-grid">
             <div className="blog-post">
-                <div className={`blog-title`}>{blog.ka.title}</div>
+                <div className={`blog-post-title letter-spacing-medium`}>{blog.ka.title.toUpperCase()}</div>
                 <Image className="blog-post-image" src={blog.image} alt="" width={400} height={200} loading="lazy" />
-                <div className={`blog-post-description ${isDarkmode ? "darkmode" : ""}`}>{blog.ka.description}</div>
+                <div className={`blog-post-description letter-spacing-small ${isDarkmode ? "darkmode" : ""}`}>{blog.ka.description}</div>
             </div>
             <div className="blog-nav">
                 {Blogs.map((b) => {
                     return <Link href={{ pathname: `${b.id}` }} key={b.id} className={`blog-nav-item ${b.id === blogname ? "active" : ""}`}>
                         <Image src={b.image} alt={b.ka.title} width={400} height={200} style={{ width: "80px", height: "80px", objectFit: "cover" }} loading="lazy" />
-                        <div className="blog-nav-title">{b.ka.title}</div>
+                        <div className="blog-nav-title letter-spacing-small">{b.ka.title.toUpperCase()}</div>
                     </Link>
                 })}
             </div>
