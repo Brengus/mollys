@@ -73,9 +73,14 @@
     padding: 0.7em;
     font-weight: 700;
     background: none;
+    letter-spacing: 3px;
     line-height: 1.5em;
     border: none;
     transition: background-color 0.3s, color 0.3s;
+}
+
+.item-buttons:lang(ka) {
+    letter-spacing: 2px;
 }
 
 .button-light {

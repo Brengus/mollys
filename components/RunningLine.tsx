@@ -9,12 +9,12 @@ export default function RunningLine() {
     const isDarkmode: boolean = useSelector((state: any) => state.darkmode.isDarkmode);
     return (
         <div id="ourpartners" className="white-background">
-            <Dog rightPos="20%" topPos="-10px" />
-            <Dog rightPos="80%" topPos="100px" />
+            {/* <Dog rightPos="20%" topPos="-10px" /> */}
+            <Dog rightPos="50%" topPos="-15px" />
             <div className="column">
                 <div className="clients">
                     <div className="main-container">
-                        <h3 className={`running-line-title ${isDarkmode ? "running-line-title-dark" : ""}`}>{t("Partners").toUpperCase()}</h3>
+                        <h3 className={`running-line-title letter-spacing ${isDarkmode ? "running-line-title-dark" : ""}`}>{t("Partners").toUpperCase()}</h3>
                         <div className="logos">
                             <LogoSlide className="slide-animation" />
                             <LogoSlide className="slide-animation" />

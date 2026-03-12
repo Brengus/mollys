@@ -205,7 +205,7 @@ const resources = {
             "Email": "ელ-ფოსტა",
             "Email-office": "ოფისი: ",
             "Email-site": "საიტი: ",
-            "Social": "სოციალური ქსელები",
+            "Social": "სოც. ქსელები",
             "Book Now": "დაჯავშნე ახლავე",
             "Map": "მისამართი",
             "Gallery": "გალერეა",

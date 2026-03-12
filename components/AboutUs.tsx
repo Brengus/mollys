@@ -19,24 +19,24 @@ function AboutUs() {
         <section id="aboutus" className="aboutus-main">
             <div className="aboutus-submain">
                 <div className="aboutus-header-group">
-                    <h3 className="headline">{obj.headline}</h3>
-                    <h1 className={`aboutus-header ${isDarkmode ? "aboutus-header-dark" : ""}`}>{obj.header}</h1>
-                    <p className={`subheadline ${isDarkmode ? "aboutus-header-dark" : ""}`}>{obj.subheadline}</p>
+                    <h1 className={`aboutus-header letter-spacing ${isDarkmode ? "aboutus-header-dark" : ""}`}>{obj.header}</h1>
+                    <h3 className="headline letter-spacing-small">{obj.headline}</h3>
+
                 </div>
                 <div className="about-content-grid">
                     <div className={`about-card ${isDarkmode ? "about-card-dark" : ""}`}>
                         <div className="title-separator">
-                            <h3 className="about-titles">{obj.ourStoryTitle}</h3>
+                            <h3 className="about-titles letter-spacing">{obj.ourStoryTitle}</h3>
                             <div className="separator"></div>
                         </div>
-                        <p className={`about-text ${isDarkmode ? "about-text-dark" : ""}`}>{obj.ourStory}</p>
+                        <p className={`about-text letter-spacing-small ${isDarkmode ? "about-text-dark" : ""}`}>{obj.ourStory}</p>
                     </div>
                     <div className={`about-card ${isDarkmode ? "about-card-dark" : ""}`}>
                         <div className="title-separator">
-                            <h3 className="about-titles">{obj.ourPhilosophyTitle}</h3>
+                            <h3 className="about-titles letter-spacing-medium">{obj.ourPhilosophyTitle}</h3>
                             <div className="separator"></div>
                         </div>
-                        <p className={`about-text ${isDarkmode ? "about-text-dark" : ""}`}>{obj.ourPhilosophy}</p>
+                        <p className={`about-text letter-spacing-small ${isDarkmode ? "about-text-dark" : ""}`}>{obj.ourPhilosophy}</p>
                     </div>
 
                 </div>

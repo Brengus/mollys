@@ -57,21 +57,16 @@
 }
 
 .about-card {
-    background: var(--color-two);
+    /* background: var(--color-three); */
+    background: #36404A;
     display: grid;
     grid-template-rows: auto 1fr;
-    padding: 40px;
-    border-radius: 20px;
-    will-change: transform;
-    transition: transform 0.3s ease;
+    padding: 34px;
+    transition: all .45s cubic-bezier(0, .16, .2, 1) !important;
 }
 
 .about-card-dark {
     background: var(--color-one);
-}
-
-.about-card:hover {
-    transform: translateY(-5px);
 }
 
 /* Modernized Separator Style */
@@ -90,7 +85,6 @@
 
 .about-titles {
     font-size: 0.9rem;
-    text-transform: uppercase;
     letter-spacing: 0.15em;
     font-weight: 700;
     color: var(--color-two);

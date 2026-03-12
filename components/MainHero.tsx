@@ -16,7 +16,7 @@ function MainHero({ lng }: { lng?: string }) {
                 {/* <Wave position="position-2" /> */}
 
                 <div className="main-hero-grid">
-                    <div className={`main-hero-text ${isDarkmode ? "main-hero-text-dark" : ""} ${lng === "ge" ? "main-hero-text-georgian" : ""}`}>{t("MainHero").toUpperCase()}</div>
+                    <div className={`main-hero-text letter-spacing ${isDarkmode ? "main-hero-text-dark" : ""} ${lng === "ge" ? "main-hero-text-georgian" : ""}`}>{t("MainHero").toUpperCase()}</div>
                     <Video />
                 </div>
             </div>
