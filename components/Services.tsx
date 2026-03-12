@@ -13,7 +13,7 @@ function Services() {
 
     return (
         <>
-            <div id="services" className={`service-title ${isDarkmode ? "service-title-dark" : ""}`}>{t("Services").toUpperCase()}</div>
+            <div id="services" className={`service-title letter-spacing ${isDarkmode ? "service-title-dark" : ""}`}>{t("Services").toUpperCase()}</div>
             <div className="services">
                 {objectArray.map((service, index) => {
                     const descriptionItems = t(service.description, { returnObjects: true }) as string[];
@@ -25,7 +25,7 @@ function Services() {
 
                 )}
             </div>
-            <div id="services" className={`service-title ${isDarkmode ? "service-title-dark" : ""}`}>{t("Additional Services").toUpperCase()}</div>
+            <div id="services" className={`service-title letter-spacing ${isDarkmode ? "service-title-dark" : ""}`}>{t("Additional Services").toUpperCase()}</div>
             <div className="services">
                 {additionalServices.map((service, index) => {
                     const descriptionItems = t(service.description, { returnObjects: true }) as string[];

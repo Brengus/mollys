@@ -33,15 +33,15 @@ function Why() {
                 <Wave />
             </div>
 
-            <div className="why-title">{t("Why-title").toUpperCase()}</div>
+            <h3 className="why-title letter-spacing">{t("Why-title").toUpperCase()}</h3>
             <div className="why-grid">
                 <div className="why-text why-box-1" style={{ gridArea: "box-1" }}></div>
                 {
                     array.map((item, index) => {
                         return <div key={index} className={`why-text why-${item.box}`} style={{ gridArea: `${item.box}` }}>
                             <div>
-                                <div className="why-subtitle">{item.title}</div>
-                                <div className="why-desc">{item.desc}</div>
+                                <div className="why-subtitle letter-spacing-medium">{item.title}</div>
+                                <div className="why-desc letter-spacing-small">{item.desc}</div>
                             </div>
                         </div>
                     })

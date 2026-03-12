@@ -21,8 +21,8 @@ export default function Page() {
         <div className="service-main">
             <Image src={data ? data.image : additionalData ? additionalData.image : ""} alt={data ? data.title : additionalData ? additionalData.title : ""} width={400} height={400} />
             <div className="service-content">
-                <h2>{t(data ? data.title : additionalData ? additionalData.title : "")}</h2>
-                <ul className="service-list">
+                <h2 className="letter-spacing">{t(data ? data.title : additionalData ? additionalData.title : "").toUpperCase()}</h2>
+                <ul className="service-list letter-spacing-small">
                     {Array.isArray(descriptionItems) ? (
                         descriptionItems.map((item, index) => (
                             <li key={index}>{item}</li>
