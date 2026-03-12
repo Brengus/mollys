@@ -1,7 +1,7 @@
 [
     {
         "id": "premium-klasis-gruming-saloni-tbilisshi",
-        "image": "/blog/dogblog.webp",
+        "image": "/pics/grooming.webp",
         "ka": {
             "title": "პრემიუმ კლასის გრუმინგ სალონი თბილისში",
             "hook": "შინაურ ცხოველებზე ზრუნვა უდიდეს პასუხისმგებლობასა და სათანადო ცოდ..",
@@ -10,7 +10,7 @@
     },
     {
         "id": "ratom-aris-mnishvnelovani-profesionaluri-cxovelebis-movla",
-        "image": "/gallery/dog1.jpeg",
+        "image": "/pics/groomingdog.webp",
         "ka": {
             "title": "რატომ არის მნიშვნელოვანი პროფესიონალური ცხოველების მოვლა?",
             "hook": "ხშირად ვაწყდებით მცდარ სტერეოტიპს, თითქოს ცხოველების მოვლა მხოლ...",
@@ -19,7 +19,7 @@
     },
     {
         "id": "grumingis-servisebi",
-        "image": "/gallery/dog2.jpeg",
+        "image": "/pics/shampoo.webp",
         "ka": {
             "title": "გრუმინგის სერვისები",
             "hook": "თანამედროვე ცხოველების სალონი მომხმარებელს მრავალპროფილურ მომსახურებას სთავაზო...",
@@ -28,7 +28,7 @@
     },
     {
         "id": "ratom-anicheben-mepatroneebi-upiratesobas-profesionalur-gruming-salons-tbilisshi",
-        "image": "/gallery/dog3.jpeg",
+        "image": "/pics/dog.webp",
         "ka": {
             "title": "რატომ ანიჭებენ მეპატრონეები უპირატესობას პროფესიონალურ გრუმინგ სალონს თბილისში?",
             "hook": "თბილისში მცხოვრები პასუხისმგებლიანი მეპატრონეები სულ უფრო ხშირად ანიჭებენ უპირატესობას პროფესიო...",
@@ -37,7 +37,7 @@
     },
     {
         "id": "dzaglis-grumingi-tbilisshi-rogor-avarchiot-swori-saloni",
-        "image": "/gallery/dog4.jpeg",
+        "image": "/pics/reception.webp",
         "ka": {
             "title": "ძაღლის გრუმინგი თბილისში - როგორ ავარჩიოთ სწორი სალონი",
             "hook": "დედაქალაქში გრუმინგ სალონის და სპას შერჩევა მრავალი დეტალის შეფასებას ითვალისწინე...",
@@ -46,7 +46,7 @@
     },
     {
         "id": "katis-grumingi-tbilisshi-stresisgan-tavisufali-garemo",
-        "image": "/gallery/dog5.jpeg",
+        "image": "/pics/shampoo.webp",
         "ka": {
             "title": "კატის გრუმინგი თბილისში - სტრესისგან თავისუფალი გარემო",
             "hook": "ფისოებთან მუშაობა რადიკალურად განსხვავებულ სპეციფიკასა და უაღრესად მშვიდ გარემოს საჭიროე...",
@@ -55,7 +55,7 @@
     },
     {
         "id": "ramdenad-xshirad-schirdeba-dzagls-grumingi",
-        "image": "/gallery/dog5.jpeg",
+        "image": "/pics/bath.webp",
         "ka": {
             "title": "რამდენად ხშირად სჭირდება ძაღლს გრუმინგი?",
             "hook": "ერთ-ერთი ყველაზე აქტუალური საკითხი, რომლითაც მეპატრონეები მოგვმართავენ, არის ის, თუ რამდე...",
@@ -64,7 +64,7 @@
     },
     {
         "id": "ratom-sjobs-dzaglis-dabana-salonshi",
-        "image": "/gallery/dog5.jpeg",
+        "image": "/pics/bath.webp",
         "ka": {
             "title": "რატომ სჯობს ძაღლის დაბანა სალონში?",
             "hook": "სახლის პირობებში, პროფესიონალური ცოდნისა თუ აღჭურვილობის ნაკლებობა ხშირად არასასურველ შედეგებს...",
@@ -73,7 +73,7 @@
     },
     {
         "id": "rogor-ayalibebs-regularuli-movla-shinauri-cxovelis-xasiats",
-        "image": "/gallery/dog1.jpeg",
+        "image": "/pics/toys.webp",
         "ka": {
             "title": "როგორ აყალიბებს რეგულარული მოვლა შინაური ცხოველის ხასიათს",
             "hook": "გრუმინგი ხშირად აღიქმება როგორც ცხოველის გარეგნობზე ორიენტირებული პროცედურა, მაგრამ სინამდვილეში ის პირდ...",
@@ -82,7 +82,7 @@
     },
     {
         "id": "ras-miutitebs-shinauri-cxovelis-bewvis-mdgomareoba-mis-dietaze",
-        "image": "/gallery/dog2.jpeg",
+        "image": "/pics/daycare.webp",
         "ka": {
             "title": "რას მიუთითებს შინაური ცხოველის ბეწვის მდგომარეობა მის დიეტაზე?",
             "hook": "ზოგჯერ პატრონები ცვლიან მოვლის საშუალებებს, კოსმეტიკასა და გრუმინგის გრაფიკს, მაგრამ მათი ტხფეხა მეგობრის...",
@@ -91,7 +91,7 @@
     },
     {
         "id": "grumingis-mere-bewvi-xan-gansxvavebulad-ratom-gamoiyureba",
-        "image": "/gallery/dog1.jpeg",
+        "image": "/pics/daycaretwo.webp",
         "ka": {
             "title": "გრუმინგის მერე ბეწვი ხან განსხვავებულად რატომ გამოიყურება?",
             "hook": "კოსმეტიკის, წყლისა და გრუმინგის ტექნიკის გავლენა...",
@@ -100,7 +100,7 @@
     },
     {
         "id": "ra-sheudzlia-patrons-gaaketos-saxlis-pirobebshi-da-ra-jobia-rom-grumers-dautovos",
-        "image": "/gallery/dog3.jpeg",
+        "image": "/pics/daycarethree.webp",
         "ka": {
             "title": "რა შეუძლია პატრონს გააკეთოს სახლის პირობებში და რა ჯობია რომ გრუმერს დაუტოვოს",
             "hook": "სალონში რეგულარული გრუმინგი მოვლის საფუძველია, მაგრამ ვიზიტებს შორის სწორედ ის განსაზღვრავს ბეწ...",

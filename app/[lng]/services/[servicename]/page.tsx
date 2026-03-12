@@ -19,7 +19,7 @@ export default function Page() {
 
     return (
         <div className="service-main">
-            <Image src={data ? data.image : additionalData ? additionalData.image : ""} alt={data ? data.title : additionalData ? additionalData.title : ""} width={400} height={400} />
+            <Image src={data ? data.image : additionalData ? additionalData.image : ""} alt={data ? data.title : additionalData ? additionalData.title : ""} width={500} height={400} />
             <div className="service-content">
                 <h2 className="letter-spacing">{t(data ? data.title : additionalData ? additionalData.title : "").toUpperCase()}</h2>
                 <ul className="service-list letter-spacing-small">

@@ -6,14 +6,20 @@ import "../css/gallery.css";
 export default function GalleryComponent() {
     const { t } = useTranslation();
     const pictures = [
-        { url: "/gallery/dog1.jpeg", width: 4026, height: 6039, loading: "lazy" },
-        { url: "/gallery/dog3.jpeg", width: 3935, height: 5902, loading: "lazy" },
-        { url: "/gallery/dog4.jpeg", width: 6053, height: 4035, loading: "lazy" },
-        { url: "/gallery/dog2.jpeg", width: 4204, height: 6306, loading: "lazy" },
-        { url: "/gallery/dog5.jpeg", width: 4171, height: 2781, loading: "lazy" },
-        { url: "/gallery/dog6.jpeg", width: 4956, height: 2868, loading: "lazy" },
-        { url: "/gallery/dog7.jpeg", width: 5184, height: 3888, loading: "lazy" },
-        { url: "/logos/background.png", width: 3900, height: 2781, loading: "lazy" }
+        { url: "/pics/banner.webp", width: 6000, height: 3376, loading: "lazy" },
+        { url: "/pics/bath.webp", width: 6000, height: 3376, loading: "lazy" },
+        { url: "/pics/coffee.webp", width: 6000, height: 3376, loading: "lazy" },
+        { url: "/pics/daycare.webp", width: 6000, height: 3376, loading: "lazy" },
+        { url: "/pics/daycaretwo.webp", width: 6000, height: 3376, loading: "lazy" },
+        { url: "/pics/daycarethree.webp", width: 6000, height: 3376, loading: "lazy" },
+        { url: "/pics/dog.webp", width: 6000, height: 3376, loading: "lazy" },
+        { url: "/pics/door.webp", width: 6000, height: 3376, loading: "lazy" },
+        { url: "/pics/grooming.webp", width: 6000, height: 3376, loading: "lazy" },
+        { url: "/pics/groomingdog.webp", width: 6000, height: 3376, loading: "lazy" },
+        { url: "/pics/outsidearea.webp", width: 6000, height: 3376, loading: "lazy" },
+        { url: "/pics/reception.webp", width: 6000, height: 3376, loading: "lazy" },
+        { url: "/pics/shampoo.webp", width: 6000, height: 3376, loading: "lazy" },
+        { url: "/pics/toys.webp", width: 6000, height: 3376, loading: "lazy" }
     ];
 
     return (
