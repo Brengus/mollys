@@ -10,10 +10,8 @@
 
 .service-list {
     list-style-type: decimal-leading-zero;
-    /* Options: disc, circle, square */
     margin-top: 1.5rem;
-    padding-left: 1.5rem;
-    /* Essential for bullets to show */
+    padding-left: 3rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -23,10 +21,8 @@
     font-size: 1.1rem;
     line-height: 1.6;
     color: #333;
-    /* Adjust based on your light/dark mode */
 }
 
-/* Optional: Custom bullet color */
 .service-list li::marker {
     color: var(--color-popup);
     font-size: 1.2em;
@@ -56,6 +52,7 @@
 
     .service-main img {
         width: 100%;
+        height: auto;
         margin: auto;
     }
 }

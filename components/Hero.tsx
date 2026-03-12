@@ -10,7 +10,7 @@ function Hero({ lng }: { lng: string }) {
             <div className="hero-grid">
                 <div className="hero-text box-1" style={{ gridArea: "box-1" }}>
                     <Image
-                        src="/gallery/dog3.jpeg"
+                        src="/pics/daycare.webp"
                         alt="Grooming service"
                         fill
                         // priority
@@ -22,7 +22,7 @@ function Hero({ lng }: { lng: string }) {
                 </div>
                 <div className="hero-text box-2" style={{ gridArea: "box-2" }}>
                     <Image
-                        src="/dzagloba.webp"
+                        src="/pics/outsidearea.webp"
                         alt="Happy dog"
                         fill
                         sizes="(max-width: 768px) 100vw, 33vw"
@@ -33,7 +33,7 @@ function Hero({ lng }: { lng: string }) {
                 </div>
                 <div className="hero-text box-3" style={{ gridArea: "box-3" }}>
                     <Image
-                        src="/Studio.webp"
+                        src="/pics/coffee.webp"
                         alt="Our Studio"
                         fill
                         sizes="(max-width: 768px) 100vw, 25vw"
@@ -49,7 +49,7 @@ function Hero({ lng }: { lng: string }) {
                 </div>
                 <div className="hero-text box-4" style={{ gridArea: "box-4" }}>
                     <Image
-                        src="/gallery/dog2.jpeg"
+                        src="/pics/door.webp"
                         alt="Dog grooming"
                         fill
                         sizes="(max-width: 768px) 100vw, 25vw"

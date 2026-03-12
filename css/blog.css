@@ -45,8 +45,9 @@
 }
 
 .blog-post-title {
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 4vw, 3.5rem);
     color: var(--color-popup);
+    text-wrap: inherit;
     font-weight: 400;
     margin: 20px 0 40px 10px;
 

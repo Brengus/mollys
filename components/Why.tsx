@@ -1,5 +1,6 @@
 import "../css/why.css";
 import Wave from "./Wave";
+import Image from "next/image";
 import { useTranslation } from 'next-i18next';
 
 function Why() {
@@ -35,7 +36,13 @@ function Why() {
 
             <h3 className="why-title letter-spacing">{t("Why-title").toUpperCase()}</h3>
             <div className="why-grid">
-                <div className="why-text why-box-1" style={{ gridArea: "box-1" }}></div>
+                <div className="why-text why-box-1" style={{ gridArea: "box-1" }}>
+                    <Image src={"/pics/grooming.webp"} alt="Our Studio"
+                        width="6000"
+                        height="3376"
+                        // sizes="(max-width: 768px) 100vw, 25vw"
+                        loading='lazy' />
+                </div>
                 {
                     array.map((item, index) => {
                         return <div key={index} className={`why-text why-${item.box}`} style={{ gridArea: `${item.box}` }}>

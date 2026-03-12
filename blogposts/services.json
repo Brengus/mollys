@@ -1,25 +1,25 @@
 [
     {
         "title": "Hygienic Grooming",
-        "image": "/gallery/dog2.jpeg",
+        "image": "/pics/dog.webp",
         "description": "Hygienic Grooming-p",
         "url": "hygienic-grooming"
     },
     {
         "title": "Full Grooming",
-        "image": "/gallery/dog1.jpeg",
+        "image": "/pics/daycare.webp",
         "description": "Full Grooming-p",
         "url": "full-grooming"
     },
     {
         "title": "Exhibition Grooming",
-        "image": "/gallery/dog3.jpeg",
+        "image": "/pics/daycaretwo.webp",
         "description": "Exhibition Grooming-p",
         "url": "exhibition-grooming"
     },
     {
         "title": "Additional Services",
-        "image": "/gallery/dog4.jpeg",
+        "image": "/pics/daycarethree.webp",
         "description": "Additional Services-p",
         "url": "paws-and-claws"
     }
