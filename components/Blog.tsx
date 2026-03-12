@@ -23,7 +23,7 @@ export default function Blog({ lng }: { lng: string }) {
                         pathname: `${lng ? 'ka/' : ''}blog/${blog.id}`,
                     }}>
                         <Image className="blog-image" src={blog.image} alt={blog.ka.title} width={400} height={400} loading="lazy" />
-                        <h2 className="blog-title letter-spacing-medium">{blog.ka.title}</h2>
+                        <h2 className="blog-title letter-spacing-medium">{blog.ka.title.toUpperCase()}</h2>
                         <p className={`blog-text letter-spacing-small ${isDarkmode ? "darkmode" : ""}`} >{blog.ka.hook}</p>
                     </Link>
                 </div>
