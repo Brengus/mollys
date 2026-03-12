@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Providers } from '@/components/Providers';
 import { notFound } from "next/navigation";
 
@@ -30,6 +31,12 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
             template: "%s | Molly's",
         },
         description,
+        verification: {
+            google: '-haxGJ-yIyLnZ3avshE8EFMGZPaka1oJ6IPV3-AHNVY',
+            other: {
+                'msvalidate.01': 'BB9794C87C7D9CD65BB55CD26957EDB1',
+            },
+        },
         alternates: {
             canonical: './',
         },
@@ -141,6 +148,16 @@ async function LngLayout({
     return (
         <html lang={lng}>
             <body>
+                <Script id="microsoft-clarity" strategy="afterInteractive">
+                    {`
+                        (function(c,l,a,r,i,t,y){
+                            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                        })(window, document, "clarity", "script", "vuk0sap6yx");
+                    `}
+                </Script>
+
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
