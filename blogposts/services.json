@@ -1,26 +1,38 @@
 [
     {
-        "title": "Hygienic Grooming",
+        "title": "Professional Shampoo",
         "image": "/pics/dog.webp",
-        "description": "Hygienic Grooming-p",
-        "url": "hygienic-grooming"
+        "description": "Professional Shampoo-p",
+        "url": "professional-Shampoo"
     },
     {
-        "title": "Full Grooming",
+        "title": "Furr",
         "image": "/pics/daycare.webp",
-        "description": "Full Grooming-p",
-        "url": "full-grooming"
+        "description": "Furr-p",
+        "url": "furr"
     },
     {
-        "title": "Exhibition Grooming",
+        "title": "Hygienic Cut",
         "image": "/pics/daycaretwo.webp",
-        "description": "Exhibition Grooming-p",
-        "url": "exhibition-grooming"
+        "description": "Hygienic Cut-p",
+        "url": "hygyenic-cut"
     },
     {
-        "title": "Additional Services",
+        "title": "Nails",
         "image": "/pics/daycarethree.webp",
-        "description": "Additional Services-p",
-        "url": "paws-and-claws"
+        "description": "Nails-p",
+        "url": "nails"
+    },
+    {
+        "title": "Ears",
+        "image": "/pics/daycarethree.webp",
+        "description": "Ears-p",
+        "url": "ears"
+    },
+    {
+        "title": "Eyes",
+        "image": "/pics/daycarethree.webp",
+        "description": "Eyes-p",
+        "url": "eyes"
     }
 ]

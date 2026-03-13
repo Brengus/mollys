@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Cosmetics",
+        "image": "/pics/dog.webp",
+        "description": "Cosmetics-p",
+        "url": "cosmetics"
+    },
+    {
+        "title": "Paws",
+        "image": "/pics/daycare.webp",
+        "description": "Paws-p",
+        "url": "paws"
+    },
+    {
+        "title": "Ears Detailed",
+        "image": "/pics/daycaretwo.webp",
+        "description": "Ears Detailed-p",
+        "url": "ears-detailed"
+    },
+    {
+        "title": "Eyes Around",
+        "image": "/pics/daycarethree.webp",
+        "description": "Eyes Around-p",
+        "url": "eyes-around"
+    },
+    {
+        "title": "Intensive",
+        "image": "/pics/daycarethree.webp",
+        "description": "Intensive-p",
+        "url": "intensive"
+    },
+    {
+        "title": "Final Styling",
+        "image": "/pics/daycarethree.webp",
+        "description": "Final Styling-p",
+        "url": "final-styling"
+    }
+]
