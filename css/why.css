@@ -8,7 +8,7 @@
     grid-template-areas:
         "box-1 box-1 box-2 box-2"
         "box-1 box-1 box-3 box-3"
-        "box-1 box-1 box-4 box-4"
+        "box-4 box-4 box-4 box-4"
         "box-5 box-5 box-5 box-5";
     margin: 50px auto 50px auto;
 }
@@ -19,8 +19,9 @@
 }
 
 .why-box-1 {
-    aspect-ratio: 1;
-    clip-path: shape(from 87.37% 47.76%, curve to 90.52% 58.12% with 88.51% 52.42%, curve to 91.15% 69.53% with 92.52% 63.82%, curve to 81.67% 75.17% with 89.78% 75.24%, curve to 71.30% 79.86% with 73.56% 75.09%, curve to 65.04% 88.82% with 69.04% 84.62%, curve to 55.52% 96.05% with 61.04% 93.01%, curve to 45.75% 91.11% with 50.00% 99.10%, curve to 33.85% 88.21% with 41.49% 83.13%, curve to 23.70% 86.99% with 26.20% 93.30%, curve to 21.95% 74.00% with 21.20% 80.67%, curve to 19.35% 64.19% with 22.70% 67.32%, curve to 14.05% 56.72% with 16.00% 61.05%, curve to 10.06% 47.19% with 12.11% 52.38%, curve to 9.59% 36.86% with 8.00% 41.99%, curve to 16.58% 29.28% with 11.18% 31.73%, curve to 24.09% 22.03% with 21.99% 26.83%, curve to 29.37% 11.57% with 26.19% 17.23%, curve to 38.50% 6.02% with 32.54% 5.91%, curve to 49.61% 9.23% with 44.46% 6.13%, curve to 58.71% 15.18% with 54.76% 12.33%, curve to 65.57% 21.30% with 62.66% 18.03%, curve to 75.85% 23.54% with 68.48% 24.57%, curve to 88.99% 25.73% with 83.23% 22.51%, curve to 90.48% 36.02% with 94.74% 28.95%, curve to 87.37% 47.76% with 86.23% 43.09%);
+    aspect-ratio: 16/9;
+    
+    /* clip-path: shape(from 87.37% 47.76%, curve to 90.52% 58.12% with 88.51% 52.42%, curve to 91.15% 69.53% with 92.52% 63.82%, curve to 81.67% 75.17% with 89.78% 75.24%, curve to 71.30% 79.86% with 73.56% 75.09%, curve to 65.04% 88.82% with 69.04% 84.62%, curve to 55.52% 96.05% with 61.04% 93.01%, curve to 45.75% 91.11% with 50.00% 99.10%, curve to 33.85% 88.21% with 41.49% 83.13%, curve to 23.70% 86.99% with 26.20% 93.30%, curve to 21.95% 74.00% with 21.20% 80.67%, curve to 19.35% 64.19% with 22.70% 67.32%, curve to 14.05% 56.72% with 16.00% 61.05%, curve to 10.06% 47.19% with 12.11% 52.38%, curve to 9.59% 36.86% with 8.00% 41.99%, curve to 16.58% 29.28% with 11.18% 31.73%, curve to 24.09% 22.03% with 21.99% 26.83%, curve to 29.37% 11.57% with 26.19% 17.23%, curve to 38.50% 6.02% with 32.54% 5.91%, curve to 49.61% 9.23% with 44.46% 6.13%, curve to 58.71% 15.18% with 54.76% 12.33%, curve to 65.57% 21.30% with 62.66% 18.03%, curve to 75.85% 23.54% with 68.48% 24.57%, curve to 88.99% 25.73% with 83.23% 22.51%, curve to 90.48% 36.02% with 94.74% 28.95%, curve to 87.37% 47.76% with 86.23% 43.09%); */
     /* background-position: center; */
 }
 

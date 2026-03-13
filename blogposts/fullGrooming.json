@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Furr Type",
+        "image": "/pics/dog.webp",
+        "description": "Furr Type-p",
+        "url": "furr-type"
+    },
+    {
+        "title": "Fan",
+        "image": "/pics/daycare.webp",
+        "description": "Fan-p",
+        "url": "fan"
+    },
+    {
+        "title": "Modeling",
+        "image": "/pics/daycaretwo.webp",
+        "description": "Modeling-p",
+        "url": "modeling"
+    },
+    {
+        "title": "Hygienic Zones",
+        "image": "/pics/daycarethree.webp",
+        "description": "Hygienic Zones-p",
+        "url": "hygienic-zones"
+    },
+    {
+        "title": "Nail Formation",
+        "image": "/pics/daycarethree.webp",
+        "description": "Nail Formation-p",
+        "url": "nail-formation"
+    },
+    {
+        "title": "Ear Cleaning",
+        "image": "/pics/daycarethree.webp",
+        "description": "Ear Cleaning-p",
+        "url": "ear-cleaning"
+    },
+    {
+        "title": "Eyes Cleaning",
+        "image": "/pics/daycarethree.webp",
+        "description": "Eyes Cleaning-p",
+        "url": "eyes-cleaning"
+    },
+    {
+        "title": "Teeth",
+        "image": "/pics/daycarethree.webp",
+        "description": "Teeth-p",
+        "url": "teeth"
+    },
+    {
+        "title": "Spray",
+        "image": "/pics/daycarethree.webp",
+        "description": "Spray-p",
+        "url": "spray"
+    }
+]

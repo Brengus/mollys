@@ -15,6 +15,14 @@
     scroll-margin-top: 100px;
 }
 
+.service-p {
+    max-width: 1000px;
+    opacity: 0.8;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
 .service-title-dark {
     color: var(--color-one);
 }

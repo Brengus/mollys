@@ -1,20 +1,32 @@
 [
     {
-        "title": "Para Anal",
+        "title": "Furr Dye",
         "image": "/pics/bath.webp",
+        "description": "Furr Dye-p",
+        "url": "furr-dye"
+    },
+    {
+        "title": "Paws and Belly",
+        "image": "/pics/grooming.webp",
+        "description": "Paws and Belly-p",
+        "url": "paws-and-belly"
+    },
+    {
+        "title": "Nail Cutting",
+        "image": "/pics/groomingdog.webp",
+        "description": "Nail Cutting-p",
+        "url": "nail-cutting"
+    },
+    {
+        "title": "Ear Correction",
+        "image": "/pics/groomingdog.webp",
+        "description": "Ear Correction-p",
+        "url": "ear-correction"
+    },
+    {
+        "title": "Para Anal",
+        "image": "/pics/groomingdog.webp",
         "description": "Para Anal-p",
         "url": "paraanal"
-    },
-    {
-        "title": "Teeth Cleaning",
-        "image": "/pics/grooming.webp",
-        "description": "Teeth Cleaning-p",
-        "url": "teeth-cleaning"
-    },
-    {
-        "title": "Parasites",
-        "image": "/pics/groomingdog.webp",
-        "description": "Parasites-p",
-        "url": "parasites"
     }
 ]

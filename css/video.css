@@ -16,3 +16,10 @@ video {
     -webkit-filter: contrast(1) saturate(1);
     filter: contrast(2) saturate(5) brightness(1.2) drop-shadow(0 0 1px rgb(228, 112, 75));
 }
+
+.commercial-wrapper {
+    aspect-ratio: 16/9;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
