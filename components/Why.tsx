@@ -6,23 +6,23 @@ import { useTranslation } from 'next-i18next';
 function Why() {
     const array = [
         {
-            title: "Expert-Led Innovation",
-            desc: "We don't just follow industry standards; we set them. Our team of seasoned specialists brings decades of collective experience to ensure every project is built with cutting-edge technology and forward-thinking strategy.",
+            title: "პრემიუმ ხარისხის გრუმინგი",
+            desc: "ჩვენი გრუმინგ სალონი გთავაზობთ პრემიუმ ხარისხის მომსახურებას. ვიყენებთ პროფესიონალური, პრემიუმ ხაზის კოსმეტიკას, რომელიც ინდივიდუალურად შეირჩევა თითოეული ძაღლის და კატის ჯიშისა და ბეწვის ტიპის მიხედვით. ეს უზრუნველყოფს ბეწვის ჯანმრთელობას, სისუფთავეს და იდეალურ ვიზუალს.",
             box: "box-2"
         },
         {
-            title: "Client-Centric Approach",
-            desc: "Your goals are our North Star. We ditch the 'one-size-fits-all' mentality in favor of bespoke solutions, maintaining transparent communication and dedicated support from the first meeting to the final hand-off.",
+            title: "გამოცდილება და უსაფრთხოება",
+            desc: "ჩვენი გრუმერები 7 წლიანი გამოცდილების პროფესიონალები არიან, რომლებიც თითოეულ ცხოველს მაქსიმალური ყურადღებით და სიყვარულით უვლიან. პროცესში არ ვიყენებთ დამამშვიდებელ ან სედატიურ ნივთიერებებს — ჩვენთვის მნიშვნელოვანია, რომ თქვენი ოთხფეხა მეგობარი იყოს უსაფრთხოდ და კომფორტულად.",
             box: "box-3"
         },
         {
-            title: "Data-Driven Results",
-            desc: "We believe in growth you can actually measure. By leveraging advanced analytics and performance tracking, we ensure that every creative decision is backed by hard data to maximize your return on investment.",
+            title: "გამჭვირვალე და თანამედროვე გარემო",
+            desc: "ჩვენს სალონში გრუმინგ ზონა სრულიად გამჭვირვალეა და დამონტაჟებულია კამერები, რათა ნებისმიერ დროს შეძლოთ თქვენი ცხოველის გრუმინგ პროცესის თვალყურის დევნება. ვიყენებთ საუკეთესო ტექნიკას, რაც პროცესს უფრო სწრაფს, უსაფრთხოს და კომფორტულს ხდის.",
             box: "box-4"
         },
         {
-            title: "Uncompromising Quality",
-            desc: "Detail isn't just a buzzword for us—it's our obsession. From the underlying code to the final user interface, we perform rigorous testing to deliver a seamless, high-performance experience that stands the test of time.",
+            title: "სივრცე ცხოველისა და პატრონის კომფორტისთვის",
+            desc: "სალონი მოწყობილია ისე, რომ კომფორტული იყოს არა მხოლოდ ცხოველისთვის, არამედ მისი პატრონისთვისაც. „მოლი“ მხოლოდ გრუმინგ სალონი არ არის — ის ასევე წარმოადგენს ძაღლების ბაღს, სადაც თქვენს ოთხფეხა მეგობარს შეუძლია დრო სასიამოვნოდ და აქტიურად გაატაროს, თქვენ კი აპარატის ყავა მიირთვათ და დაელოდოთ თქვენს ოთხფეხა მეგობარს ესტეტიურ და მოწესრიგებულ გარემოშო.",
             box: "box-5"
         },
 
