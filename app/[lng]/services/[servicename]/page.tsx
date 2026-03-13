@@ -19,9 +19,9 @@ export default function Page() {
 
     // 1. Flatten all data sources into one searchable array
     const allServices = [
-        ...Services, 
-        ...exhibitionGrooming, 
-        ...fullGrooming, 
+        ...Services,
+        ...exhibitionGrooming,
+        ...fullGrooming,
         ...additionalServices
     ];
 
@@ -38,11 +38,11 @@ export default function Page() {
     return (
         <div className="service-main">
             <div className="image-wrapper">
-                <Image 
-                    src={service.image} 
-                    alt={service.title} 
-                    width={500} 
-                    height={400} 
+                <Image
+                    src={service.image}
+                    alt={service.title}
+                    width={500}
+                    height={400}
                     priority // Performance boost for LCP
                 />
             </div>
