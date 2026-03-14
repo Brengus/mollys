@@ -1,18 +1,27 @@
 .gallery {
-    column-count: 3;
-    column-gap: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    align-items: start;
 }
 
 .gallery-item {
-    break-inside: avoid;
-    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
-.gallery-image {
-    width: 100%;
-    height: auto;
+.gallery-item:hover {
+    transform: scale(1.02);
+    z-index: 2;
+}
+
+.gallery-img {
+    object-fit: cover;
     display: block;
 }
 
@@ -27,6 +36,6 @@
 
 @media (max-width: 768px) {
     .gallery {
-        column-count: 1;
+        grid-template-columns: 1fr;
     }
 }

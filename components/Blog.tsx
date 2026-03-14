@@ -7,9 +7,7 @@ import { useSelector } from "react-redux";
 import { useTranslation } from 'next-i18next';
 
 interface State {
-    darkmode: {
-        isDarkmode: boolean;
-    }
+    darkmode: { isDarkmode: boolean }
 }
 export default function Blog({ lng }: { lng: string }) {
     const { t } = useTranslation();
@@ -19,9 +17,7 @@ export default function Blog({ lng }: { lng: string }) {
         <div className="blog-grid">
             {Blogs.map((blog) => {
                 return <div key={blog.id} className="blog-card">
-                    <Link href={{
-                        pathname: `${lng ? 'ka/' : ''}blog/${blog.id}`,
-                    }}>
+                    <Link href={{ pathname: `${lng ? 'ka/' : ''}blog/${blog.id}` }}>
                         <Image className="blog-image" src={blog.image} alt={blog.ka.title} width={400} height={400} loading="lazy" />
                         <h2 className="blog-title letter-spacing-medium">{blog.ka.title.toUpperCase()}</h2>
                         <p className={`blog-text letter-spacing-small ${isDarkmode ? "darkmode" : ""}`} >{blog.ka.hook}</p>
@@ -29,6 +25,5 @@ export default function Blog({ lng }: { lng: string }) {
                 </div>
             })}
         </div>
-
     </>
 }

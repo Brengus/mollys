@@ -1,48 +1,48 @@
-import "../css/aboutus.css";
+import { useMemo } from "react";
 import { useSelector } from "react-redux";
 import { useTranslation } from 'react-i18next';
-
+import "../css/aboutus.css";
+interface RootState {
+    darkmode: { isDarkmode: boolean };
+}
 function AboutUs() {
     const { t } = useTranslation();
-    const isDarkmode: boolean = useSelector((state: any) => state.darkmode.isDarkmode);
-    const obj = {
-        header: t("About-h2").toUpperCase(),
-        headline: t("About-h1").toUpperCase(),
-        subheadline: t("About-h3").toUpperCase(),
-        ourStoryTitle: t("Story").toUpperCase(),
-        ourStory: t("Story-p"),
-        ourPhilosophyTitle: t("Philosophy").toUpperCase(),
-        ourPhilosophy: t("Philosophy-p")
-    };
-
+    const isDarkmode = useSelector((state: RootState) => state.darkmode.isDarkmode);
+    const content = useMemo(() => [
+        {
+            id: "story",
+            title: t("Story").toUpperCase(),
+            text: t("Story-p"),
+            spacingClass: "letter-spacing"
+        },
+        {
+            id: "philosophy",
+            title: t("Philosophy").toUpperCase(),
+            text: t("Philosophy-p"),
+            spacingClass: "letter-spacing-medium"
+        }
+    ], [t]);
+    const themeClass = isDarkmode ? "dark-theme" : "light-theme";
     return (
-        <section id="aboutus" className="aboutus-main">
+        <div className={`aboutus-main ${themeClass}`}>
             <div className="aboutus-submain">
-                <div className="aboutus-header-group">
-                    <h1 className={`aboutus-header letter-spacing ${isDarkmode ? "aboutus-header-dark" : ""}`}>{obj.header}</h1>
-                    <h3 className="headline letter-spacing-small">{obj.headline}</h3>
-
-                </div>
+                <header className="aboutus-header-group">
+                    <h1 className="aboutus-header letter-spacing">{t("About-h2").toUpperCase()}</h1>
+                    <h3 className="headline letter-spacing-small">{t("About-h1").toUpperCase()}</h3>
+                </header>
                 <div className="about-content-grid">
-                    <div className={`about-card ${isDarkmode ? "about-card-dark" : ""}`}>
-                        <div className="title-separator">
-                            <h3 className="about-titles letter-spacing">{obj.ourStoryTitle}</h3>
-                            <div className="separator"></div>
-                        </div>
-                        <p className={`about-text letter-spacing-small ${isDarkmode ? "about-text-dark" : ""}`}>{obj.ourStory}</p>
-                    </div>
-                    <div className={`about-card ${isDarkmode ? "about-card-dark" : ""}`}>
-                        <div className="title-separator">
-                            <h3 className="about-titles letter-spacing-medium">{obj.ourPhilosophyTitle}</h3>
-                            <div className="separator"></div>
-                        </div>
-                        <p className={`about-text letter-spacing-small ${isDarkmode ? "about-text-dark" : ""}`}>{obj.ourPhilosophy}</p>
-                    </div>
-
+                    {content.map(({ id, title, text, spacingClass }) => (
+                        <article key={id} className="about-card">
+                            <div className="title-separator">
+                                <h3 className={`about-titles ${spacingClass}`}>{title}</h3>
+                                <div className="separator" aria-hidden="true"></div>
+                            </div>
+                            <p className="about-text letter-spacing-small">{text}</p>
+                        </article>
+                    ))}
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
-
 export default AboutUs;

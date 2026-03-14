@@ -9,7 +9,6 @@ export default function RunningLine() {
     const isDarkmode: boolean = useSelector((state: any) => state.darkmode.isDarkmode);
     return (
         <div id="ourpartners" className="white-background">
-            {/* <Dog rightPos="20%" topPos="-10px" /> */}
             <Dog rightPos="50%" topPos="-15px" />
             <div className="column">
                 <div className="clients">

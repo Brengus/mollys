@@ -3,25 +3,20 @@ import { motion, AnimatePresence } from 'motion/react';
 import { MoreHorizontal, Phone, MessageCircleMore, CalendarPlus, X, Pointer } from 'lucide-react';
 import { cn } from './utils';
 
-
 export default function ActionMenu() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
-
     const handleActionClick = (action: () => void) => {
         action();
         setIsMenuOpen(false);
     };
-
     const actions = [
         { id: 'whatsapp', icon: <MessageCircleMore size={30} />, label: 'Whatsapp', onClick: () => window.open('https://wa.me/995568611223', '_blank'), color: 'bg-[#25D366]' },
         { id: 'phone', icon: <Phone size={30} />, label: 'Call', onClick: () => window.open('tel:+995568611223', '_blank'), color: 'bg-blue-500' },
         { id: 'book', icon: <CalendarPlus size={30} />, label: 'Book Now', onClick: () => window.open("https://www.fresha.com/book-now/bregvasbusiness-efouvgsj/all-offer?share=true&pId=2786881", "_blank"), color: 'bg-brand-primary' },
     ];
-
     return (
         <div className="flex flex-col items-end gap-3">
             <AnimatePresence>
@@ -63,7 +58,6 @@ export default function ActionMenu() {
                     </motion.div>
                 )}
             </AnimatePresence>
-
             <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
