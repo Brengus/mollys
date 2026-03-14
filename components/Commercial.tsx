@@ -6,7 +6,7 @@ import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 export default function GroomingVideo() {
     return (
         <div className="video-wrapper">
-            <LiteYouTubeEmbed id="j13tJLl4M6g" title="Dog grooming" />
+            <LiteYouTubeEmbed id="RptLV6xGi_8" title="Dog grooming" lazyLoad />
         </div>
     );
 }
