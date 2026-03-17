@@ -38,7 +38,12 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
             },
         },
         alternates: {
-            canonical: './',
+            canonical: `/${lng}`, // Self-referencing: /en or /ka
+            languages: {
+                'en-US': '/en',
+                'ka-GE': '/ka',
+                'x-default': '/ka', // Best practice: points to your main language
+            },
         },
         openGraph: {
             title,
@@ -134,7 +139,7 @@ async function LngLayout({
             "@type": "City",
             name: "Tbilisi"
         },
-        priceRange: "50–250 GEL",
+        priceRange: "50-250 GEL",
         hasMap: "https://www.google.com/maps/place/4g+Ana+Politkovskaia+St,+T'bilisi/@41.7162652,44.7075001,15z/data=!4m6!3m5!1s0x40447376d903b0fd:0x60785a626810a3a8!8m2!3d41.7193885!4d44.7156111!16s%2Fg%2F11rxnh0sw1?hl=en&entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D"
     };
 
