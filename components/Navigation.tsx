@@ -16,10 +16,10 @@ interface State {
     }
 }
 
-function Navigation() {
+function Navigation({ lng }: { lng: string }) {
     const { t, i18n } = useTranslation();
     const params = useParams();
-    const lng = params?.lng as string;
+    // const lng = params?.lng as string;
     const scrollRef = useRef<HTMLDivElement>(null);
     const ghostRef = useRef<HTMLDivElement>(null);
     const isDarkmode: boolean = useSelector((state: State) => state.darkmode.isDarkmode);
@@ -29,13 +29,13 @@ function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
 
     const linkArray = [
-        { id: "", label: t("Home") },
-        { id: "/gallery", label: t("Gallery") },
-        { id: "/services", label: t("Services") },
-        { id: "/about", label: t("About") },
-        { id: "#ourpartners", label: t("Partners") },
-        { id: "#map", label: t("Map") },
-        { id: "/blog", label: t("Blog") },
+        { id: "", label: t("Home", { lng }) },
+        { id: "/gallery", label: t("Gallery", { lng }) },
+        { id: "/services", label: t("Services", { lng }) },
+        { id: "/about", label: t("About", { lng }) },
+        { id: "#ourpartners", label: t("Partners", { lng }) },
+        { id: "#map", label: t("Map", { lng }) },
+        { id: "/blog", label: t("Blog", { lng }) },
     ];
 
     const handleClick = () => {
@@ -74,7 +74,7 @@ function Navigation() {
                 <nav className="navigation-class">
                     <div className="item">
                         <Link href={`/${lng}`}>
-                            <Image src="/logos/title.webp" width="72" height="22" title={t("Home")} alt="logo" className="logo" />
+                            <Image src="/logos/title.webp" width="72" height="22" title={t("Home", { lng })} alt="logo" className="logo" />
                         </Link>
                     </div>
                     <div className={`nav-buttons item ${menuOpen ? "open" : ""} ${isDarkmode ? "open-dark" : ""}`}>

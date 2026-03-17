@@ -1,15 +1,16 @@
+'use client';
 import "../css/why.css";
 import WhyArray from "@/blogposts/why.json";
 import Wave from "./Wave";
 import GroomingVideo from "./Commercial";
 import { useTranslation } from 'next-i18next';
 
-function Why() {
+function Why({ lng }: { lng: string }) {
     const { t } = useTranslation();
     return (
         <>
             <div className="why-wave"><Wave /></div>
-            <h3 className="why-title letter-spacing">{t("Why-title").toUpperCase()}</h3>
+            <h3 className="why-title letter-spacing">{t("Why-title", { lng }).toUpperCase()}</h3>
             <div className="why-grid">
                 <div className="why-text why-box-1" style={{ gridArea: "box-1" }}><GroomingVideo /></div>
                 {

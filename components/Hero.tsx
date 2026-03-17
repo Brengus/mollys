@@ -1,3 +1,4 @@
+'use client';
 import "../css/hero.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -26,7 +27,7 @@ function Hero({ lng }: { lng: string }) {
                     {item.hasLink && (
                         <div className="box-overlay">
                             <Link className="hero-link" href={`${lng ? 'ka/' : 'en/'}gallery`}>
-                                {t("View-more").toUpperCase()}
+                                {t("View-more", { lng }).toUpperCase()}
                             </Link>
                         </div>
                     )}
