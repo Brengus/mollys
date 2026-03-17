@@ -1,3 +1,4 @@
+'use client';
 import "../css/services.css";
 import objectArray from "@/blogposts/services.json";
 import additionalServices from "@/blogposts/additionalServices.json";

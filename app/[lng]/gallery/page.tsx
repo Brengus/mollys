@@ -1,6 +1,21 @@
-'use client';
 import Gallery from '@/components/Gallery';
-import { appWithTranslation } from 'next-i18next';
+// import { appWithTranslation } from 'next-i18next';
+
+export async function generateMetadata({ params }: { params: Promise<{ lng: string }> }) {
+    const { lng } = await params;
+    const path = 'gallery'; // Change this for each page (e.g., 'about', 'gallery')
+
+    return {
+        alternates: {
+            canonical: `/${lng}/${path}`,
+            languages: {
+                en: `/en/${path}`,
+                ka: `/ka/${path}`,
+                'x-default': `/ka/${path}`, // Since you default to /ka
+            },
+        },
+    };
+}
 
 function GalleryPage() {
 
@@ -11,4 +26,4 @@ function GalleryPage() {
     );
 }
 
-export default appWithTranslation(GalleryPage);
+export default GalleryPage;
