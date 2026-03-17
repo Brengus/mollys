@@ -42,7 +42,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
             languages: {
                 'en-US': '/en',
                 'ka-GE': '/ka',
-                'x-default': '/ka', // Best practice: points to your main language
             },
         },
         openGraph: {
