@@ -1,21 +1,31 @@
-'use client';
-import { useSyncLanguage } from '../useSyncLanguage';
 import MainHero from '@/components/MainHero';
 import Hero from '@/components/Hero';
 import RunningLine from '@/components/RunningLine';
 import Why from '@/components/Why';
 import Map from '@/components/Map';
-import { appWithTranslation } from 'next-i18next';
-import { useParams } from 'next/navigation';
+import ClientLanguageSync from '@/components/ClientLanguageSync';
+
 import Blog from '@/components/Blog';
 
-function MainPage() {
-    const params = useParams();
-    const lng = params.lng as string;
-    useSyncLanguage();
+export async function generateMetadata({ params }: { params: Promise<{ lng: string }> }) {
+    const { lng } = await params;
+    return {
+        alternates: {
+            canonical: `/${lng}`,
+            languages: {
+                en: '/en',
+                ka: '/ka',
+            },
+        },
+    };
+}
+
+async function MainPage({ params }: { params: Promise<{ lng: string }> }) {
+    const { lng } = await params;
 
     return (
         <>
+            <ClientLanguageSync lng={lng} />
             <section>
                 <MainHero lng={lng} />
             </section>
@@ -23,9 +33,9 @@ function MainPage() {
                 <Hero lng={lng} />
             </section>
             <section id="ourpartners" style={{ height: '300px' }}>
-                <RunningLine />
+                <RunningLine lng={lng} />
             </section>
-            <Why />
+            <Why lng={lng} />
             <Blog lng={lng} />
             <section id="map">
                 <div style={{ height: '350px' }}>
@@ -36,4 +46,4 @@ function MainPage() {
     );
 }
 
-export default appWithTranslation(MainPage);
+export default MainPage;

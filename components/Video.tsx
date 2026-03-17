@@ -1,3 +1,4 @@
+'use client';
 import '../css/video.css';
 import { useEffect, useRef } from 'react';
 

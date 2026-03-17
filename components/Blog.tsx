@@ -13,7 +13,7 @@ export default function Blog({ lng }: { lng: string }) {
     const { t } = useTranslation();
     const isDarkmode: boolean = useSelector((state: State) => state.darkmode.isDarkmode);
     return <>
-        <div id="blog" className={`blog-main-title letter-spacing ${isDarkmode ? "darkmode" : ""}`}>{t("Blog").toUpperCase()}</div>
+        <div id="blog" className={`blog-main-title letter-spacing ${isDarkmode ? "darkmode" : ""}`}>{t("Blog", { lng }).toUpperCase()}</div>
         <div className="blog-grid">
             {Blogs.map((blog) => {
                 return <div key={blog.id} className="blog-card">

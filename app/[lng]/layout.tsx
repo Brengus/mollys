@@ -171,7 +171,7 @@ async function LngLayout({
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
                 />
                 <Providers>
-                    <Navigation />
+                    <Navigation lng={lng} />
                     <main>
                         {children}
                     </main>
