@@ -10,7 +10,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
             languages: {
                 en: `/en/${path}`,
                 ka: `/ka/${path}`,
-                'x-default': `/ka/${path}`, // Since you default to /ka
             },
         },
     };

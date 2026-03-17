@@ -11,7 +11,6 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
             languages: {
                 en: `/en/${path}/${servicename}`,
                 ka: `/ka/${path}/${servicename}`,
-                'x-default': `/ka/${path}/${servicename}`, // Since you default to /ka
             },
         },
     };
