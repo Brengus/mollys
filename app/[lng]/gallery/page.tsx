@@ -18,9 +18,34 @@ export async function generateMetadata({ params }: { params: Promise<{ lng: stri
 
 function GalleryPage() {
 
+    const pictures = [
+        { url: "/clientPics/dog.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_0011.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_0071.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_0192.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_0272.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_0334.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_0501webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_0720.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_0815.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_0857.webp", aspect: 3 / 4, loading: "lazy" },
+        { url: "/clientPics/IMG_0876.webp", aspect: 3 / 4, loading: "lazy" },
+        { url: "/clientPics/IMG_1009.webp", aspect: 3 / 4, loading: "lazy" },
+        { url: "/clientPics/IMG_1027.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_1389.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_1520.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_1521.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_1523.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_1524.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_1525.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_2592.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_2597.webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_8348.webp", aspect: 16 / 9, loading: "lazy" }
+    ];
+
     return (
         <>
-            <Gallery />
+            <Gallery title="HappyClients" pictures={pictures} />
         </>
     );
 }

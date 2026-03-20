@@ -25,6 +25,19 @@ export default function BlogPostPage() {
             <div className={`blog-post-title letter-spacing-medium`}>{blog.ka.title.toUpperCase()}</div>
             <Image className="blog-post-image" src={blog.image} alt="" width={400} height={200} loading="lazy" />
             <div className={`blog-post-description letter-spacing-small ${isDarkmode ? "darkmode" : ""}`}>{blog.ka.description}</div>
+            {
+                blog.ka.additional ?
+                    blog.ka.additional.map(a => {
+                        return (
+                            <>
+                                <div>
+                                    <div key={a.title}>{a.title}</div>
+                                    <div>{a.description}</div>
+                                </div>
+                            </>
+                        )
+                    }) : ""
+            }
         </div>
         <div className="blog-nav">
             {Blogs.map((b) => {
