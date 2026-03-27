@@ -31,8 +31,8 @@ export default function BlogPostPage() {
                         return (
                             <>
                                 <div>
-                                    <div key={a.title}>{a.title}</div>
-                                    <div>{a.description}</div>
+                                    <div className="additional-title letter-spacing-small" key={a.title}>{a.title}</div>
+                                    <div className="blog-post-description letter-spacing-small">{a.description}</div>
                                 </div>
                             </>
                         )

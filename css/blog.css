@@ -53,6 +53,12 @@
 
 }
 
+.additional-title {
+    color: var(--color-popup);
+    font-weight: 400;
+    margin: 20px 0;
+}
+
 .blog-text {
     font-size: 1rem;
     color: var(--color-two);
