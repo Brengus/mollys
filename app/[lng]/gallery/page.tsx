@@ -25,7 +25,7 @@ function GalleryPage() {
         { url: "/clientPics/IMG_0192.webp", aspect: 16 / 9, loading: "lazy" },
         { url: "/clientPics/IMG_0272.webp", aspect: 16 / 9, loading: "lazy" },
         { url: "/clientPics/IMG_0334.webp", aspect: 16 / 9, loading: "lazy" },
-        { url: "/clientPics/IMG_0501webp", aspect: 16 / 9, loading: "lazy" },
+        { url: "/clientPics/IMG_0501.webp", aspect: 16 / 9, loading: "lazy" },
         { url: "/clientPics/IMG_0720.webp", aspect: 16 / 9, loading: "lazy" },
         { url: "/clientPics/IMG_0815.webp", aspect: 16 / 9, loading: "lazy" },
         { url: "/clientPics/IMG_0857.webp", aspect: 3 / 4, loading: "lazy" },
